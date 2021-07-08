@@ -1,0 +1,17 @@
+.admin-action-container {
+    background-color: var(--admin-index-secondary-color);
+    color: var(--admin-index-font-color);
+    height: fit-content;
+    min-width: fit-content;
+    align-items: center;
+    align-content: center;
+    padding: 2%;
+    padding-top: 1%;
+}
+
+.admin-close-actions-icon {
+    font-size: 2em;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

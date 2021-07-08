@@ -1,0 +1,209 @@
+.gallery-and-quotes-background
+{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.45) 0%,
+        rgba(0,0,0,0.45) 50%,rgba(0,0,0,0.45) 100% ),
+        url("../assets/brick-wall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* GalleryCard */
+
+.gallery-card
+{
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 380px;
+    min-height: 300px;
+    height: 350px;
+    max-height: 380px;
+    word-wrap: break-word;
+    background-color: #1c1c1c;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.2rem;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    color: #fff;
+    text-shadow: 1.5px 1.5px black;
+
+}
+    .gallery-card:hover
+    {
+        border: 1.5px solid #808080;
+    }
+
+.gallery-card-img
+{
+    -webkit-filter:grayscale(50%) blur(0.8px);
+    filter: grayscale(50%) blur(0.8px);
+    object-fit: cover;
+}
+
+.gallery-card-description
+{
+    margin: 1.3rem;
+    text-align: justify;
+}
+
+.gallery-card-link
+{
+    margin: 1.3rem;
+    text-decoration: underline;
+    text-shadow: 0.8px 0.8px black;
+    font-weight: bold;
+    color: white;
+}
+    .gallery-card-link:hover
+    {
+        color: #ce7801;
+    }
+
+.gallery-card-title
+{
+    font-weight: bold;
+    margin: 1.3rem;
+}
+
+/* GalleryCards */
+
+.gallery-cards-container
+{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+/* Gallery */
+
+.gallery-images-container
+{
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.gallery-col
+{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+    .gallery-col  img
+    {
+        object-fit: cover;
+        height: 260px;
+        width: 260px;
+    }
+
+.gallery-page-h
+{
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.gallery-modal .modal-content
+{
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.gallery-modal .close
+{
+    color: white;
+}
+
+.gallery-modal .modal-header {
+    border-bottom: 0 none;
+    max-height: 40px;
+}
+
+.gallery-modal .modal-footer {
+    border-top: 0 none;
+    max-height: 80px;
+}
+
+.gallery-modal .modal-body{
+    text-align: center;
+    max-height: 420px;
+}
+
+    .gallery-modal .modal-body img
+    {
+        max-height: 400px;
+    }
+
+
+
+@media screen and (max-width: 1183px)
+{
+    .gallery-col  img
+    {
+        height: 220px;
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    .gallery-modal .modal-body img
+    {
+        max-width: 450px;
+        max-height: none;
+    }
+
+    .gallery-col  img
+    {
+        height: 230px;
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 750px)
+{
+
+    .gallery-col  img
+    {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 558px)
+{
+    .gallery-modal .modal-body img
+    {
+        max-width: 400px;
+        max-height: none;
+    }
+
+    .gallery-col  img
+    {
+        height: 310px;
+        width: 310px;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .gallery-modal .modal-body img
+    {
+        max-width: 350px;
+        max-height: none;
+    }
+
+    .gallery-col  img
+    {
+        height: 300px;
+        width: 300px;
+    }
+
+}

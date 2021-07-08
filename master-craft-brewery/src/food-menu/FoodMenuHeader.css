@@ -1,0 +1,30 @@
+.food-menu-header {
+    height: 30vh;
+    width: 100%;
+    background-image: url("../assets/food-menu-header.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #1c1c1c;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width:1200px) {
+    .food-menu-header {
+        background-position-y: 10%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .food-menu-header {
+        background-attachment: local;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .food-menu-header {
+        background-image: url("../assets/food-menu-header-min.jpg");
+        background-size: cover;
+        background-attachment: local;
+    }
+}

@@ -1,0 +1,49 @@
+.dark-gray {
+    color: #fff;
+    background: #1a1a1a;
+}
+
+.pilsner-yellow {
+    color: #fff;
+    background: #e4b503;
+}
+
+.pilsner-yellow-color {
+    color: #e4b503;
+}
+
+.ipa-green {
+    color: #fff;
+    background: #01c302;
+}
+
+.ipa-green-color {
+    color: #01c302;
+}
+
+.stout-black {
+    color: #fff;
+    background: #0f0f0f;
+}
+
+.stout-black-color {
+    color: #000;
+}
+
+.bl-craft-blue {
+    color: #fff;
+    background: #338ec7;
+}
+
+.bl-craft-blue-color {
+    color: #338ec7;
+}
+
+.pale-ale-bronze {
+    color: #fff;
+    background: #ce7801;
+}
+
+.pale-ale-bronze-color {
+    color: #ce7801;
+}

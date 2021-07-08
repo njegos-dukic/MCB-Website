@@ -1,0 +1,17 @@
+﻿{
+  "name": "MCB koljenica",
+  "price": 18.0,
+  "photoUri": "/asfasf/UniorKoljenica.jpg",
+  "description": "Novo u ponudi! Teleca koljenica sa vrganjima",
+  "ingredients": [ "Teleca koljenica", "vrganji", "vrhnje" ],
+  "isInStock": true,
+  "canBePurchasedOnline": true,
+  "productServings": [
+    {
+      "productServingId": 0,
+      "productId": 0,
+      "servingId": 0,
+      "price": 18.0
+    }
+  ]
+}

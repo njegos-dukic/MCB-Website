@@ -1,0 +1,109 @@
+.event-card {
+    max-width: 400px;
+    min-width: 400px;
+    height: 200px;
+    margin: 2em;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--event-main-color);
+}
+
+.event-card-body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+    perspective: 1000px;
+}
+
+.event-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.event-card-back {
+    transform: rotateY(180deg);
+    background-color: var(--event-secondary-color);
+    opacity: 1;
+}
+
+.event-card-front {
+    background-position: center;
+    background-size: cover;
+    color: var(--event-secondary-font-color);
+    font-size: 2em;
+}
+
+.event-card-front, .event-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-radius: 2%;
+}
+
+.event-card-title {
+    font-size: 1.3em;
+    color: var(--event-secondary-font-color);
+}
+
+.event-card-date {
+    color: var(--event-secondary-font-color);
+}
+
+.event-card-button {
+    margin: 0 30%;
+    width: 40%;
+    height: 3em;
+    border: none;
+    outline: none;
+    background-color: var(--event-ternary-color);
+    color: var(--event-secondary-font-color);
+    font-size: 1em;
+}
+
+.event-card-button-icon {
+    font-size: 1.5em;
+}
+
+.event-card-body:hover .event-card-inner {
+    transform: rotateY(180deg);
+}
+
+@media screen and (max-width:576px) {
+    .event-card {
+        max-width: 300px;
+        min-width: 200px;
+        height: 100px;
+        max-height: auto;
+        margin: 1em;
+    }
+    .event-card-body {
+        font-size: 0.6em;
+    }
+    .event-card-front {
+        font-size: 1.6em;
+    }
+    .event-card-title {
+        font-size: 1em;
+    }
+    .event-card-button {
+        height: 3em;
+        font-size: 0.8em;
+    }
+    .event-card-button-icon {
+        font-size: 1em;
+    }
+}

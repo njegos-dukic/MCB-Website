@@ -1,0 +1,174 @@
+.footer-container 
+{
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-copyright-navigation, .contact-location
+{
+  width: 270px;
+  align-content: left;
+  margin-right: 7%;
+}
+
+.social-icons
+{
+  align-content: left;
+  margin-right: 7%;
+}
+
+.logo-copyright
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.website-rights 
+{
+  color: #fff;
+}
+
+.navigation
+{
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.location
+{
+  margin-top: 7%;
+}
+
+.navigation-link-first
+{
+  margin-top: 3%;
+  color: #fff;
+}
+
+.navigation-link
+{
+  margin-top: -5%;
+  color: #fff;
+}
+
+.link-paragraph:hover
+{
+  color: white;
+  text-decoration: underline;
+}
+
+.contact-header
+{
+  color: white;
+  margin-bottom: 3%;
+}
+
+.contact-info
+{
+  color: white;
+}
+
+.location
+{
+  color: #fff;
+}
+
+.location-link
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icons
+{
+  display: flex;
+  flex-direction: column;
+  font-size: 45px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ig-icon
+{
+  color: white;
+  margin-top: 95%;
+}
+
+.fb-icon
+{
+  color: white;
+}
+
+.location-link:hover, .mailto:hover, .email-link:hover, .navigation-link:hover
+{
+  color: white;
+  text-decoration: underline;
+}
+
+.address-info, .contact-info
+{
+  padding: none;
+  margin-top: -5%;
+}
+
+.contact
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-header
+{
+  margin-top: 20px;
+}
+
+.email-link
+{
+  color: #fff;
+}
+
+.map-frame
+{
+  padding: 20px;
+}
+
+
+@media screen and (max-width: 1300px) 
+{
+  .footer-container
+  {
+    flex-direction: column;
+  }
+
+  .logo-copyright-navigation
+  {
+    margin-top: 3%;
+    padding: 0px;
+  }
+
+  .social-icons
+  {
+    flex-direction: row;
+  }
+
+  .ig-icon
+  {
+    margin: 0px;
+    margin-left: 100px
+  }
+
+  .fb-icon
+  {
+    margin-left: -75px;
+  }
+
+  .map-frame, .map
+  {
+    width: 100%
+  }
+}

@@ -1,0 +1,107 @@
+.home-page-container
+{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.45) 0%,
+        rgba(0,0,0,0.45) 50%,rgba(0,0,0,0.45) 100% ),
+        url("../assets/home/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.home-slider-image{
+    height: 500px;
+}
+
+.home-page-header-container
+{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.45) 0%,
+        rgba(0,0,0,0.45) 50%,rgba(0,0,0,0.45) 100% ),
+        url("../assets/home/home-slider2_auto_x2.jpg");
+    width: 100%;
+    height: 89vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-page-h1
+{
+    font-size: 4.5rem;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px  black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.home-page-button
+{
+    background-color: #e4b503;
+    width: 20rem;
+    height: 3rem;
+    border: none;
+    border: black solid 1.5px;
+    border-radius: 5px;
+    font-weight: bolder;
+    display: block;
+    margin: 0 auto;
+}
+
+    .home-page-button:hover
+    {
+        background-color: #ce7801;
+        border: black solid 2px;
+        
+    }
+
+.home-page-logo-col
+{
+    height: 100px;
+}
+
+.home-page-logo
+{
+    display: block;
+    margin: 0 auto;
+    transform: scale(1.5, 1.5);
+}
+
+.home-page-row
+{
+    width: 100%;
+}
+
+.home-page-link:hover
+{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 976px) 
+{
+
+    .home-page-logo-col
+    {
+        height: 100px;
+        width: 100%;
+    }
+
+    .home-page-logo
+    {
+        transform: none;
+    }
+
+    .home-page-h1
+    {
+        font-size: 55px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+}

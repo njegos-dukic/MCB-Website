@@ -1,0 +1,8 @@
+{
+  "host": "smtp.mailgun.org",
+  "Port": 587,
+  "username": "postmaster@sandbox3880097c4bff4b628c7bd978d82f147c.mailgun.org",
+  "password": "199ae07fa9ec89cee813cb064229cb85-aff8aa95-c6f0be2e",
+  "sender": "marija.milica.njegos@gmail.com",
+  "receipient": "marija.vanja.novakovic@gmail.com"
+}

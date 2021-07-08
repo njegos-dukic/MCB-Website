@@ -1,0 +1,19 @@
+﻿[
+  {
+    "title": "Promocija piva",
+    "organizer": "MCB pivnica",
+    "beginOn": "2017-07-21T17:32:28Z",
+    "endOn": "2017-07-21T18:32:28Z",
+    "duration": 1,
+    "location": "MCB Banja Luka",
+    "description": "Dogadjaj za pamcenje"
+  },
+  {
+    "title": "Promocija piva 2",
+    "organizer": "MCB pivnica",
+    "beginOn": "2019-07-21T17:32:28Z",
+    "duration": 3,
+    "location": "MCB Banja Luka",
+    "description": "Dogadjaj za pamcenje"
+  }
+]

@@ -1,0 +1,6 @@
+﻿{
+  "TableRowTagFormat": "<tr style=\"border: 1px solid black;\">{0}</tr>",
+  "TableRowContentFormat": "<td style=\"width:200px;margin:0 auto;border: 1px solid black;\">{0}</td><td style=\"width:200px;margin:0 auto;border: 1px solid black;\">{1}</td><td style=\"width:200px;margin:0 auto;border: 1px solid black;\">{2}</td><td style=\"width:200px;margin:0 auto;border: 1px solid black;\">{3}</td>",
+  "TableColumns": "<th style=\"width:200px;margin:0 auto;border: 1px solid black;\">Naziv</th><th style=\"width:200px;margin:0 auto;border: 1px solid black;\">Veličina porcije</th><th style=\"width:100px;margin:0 auto;border: 1px solid black;\">Količina</th><th style=\"width:100px;margin:0 auto;border: 1px solid black;\">Cijena [KM]</th>",
+  "TableTagFormat": "<table style=\"border: 1px solid black;\"><tr style=\"border: 1px solid black;\">{0}</tr>{1}</table>"
+}

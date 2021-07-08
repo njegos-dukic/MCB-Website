@@ -1,0 +1,272 @@
+/* ===General=== */
+.beer-map-background
+{
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 50%,rgba(0,0,0,0.45) 100% ),
+    url("../assets/craft-beer-cheers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* ===Slider=== */
+.slider-section
+{
+  height: 90vh;
+  max-height: 1100px;
+  position: relative;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  margin-bottom: 30px;
+}
+
+.slider-wrapper
+{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-slide
+{
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.slider 
+{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  background: #1c1c1c;
+}
+
+  .slider::before
+  {
+   content: '';
+   position: absolute;
+   z-index: 2;
+   width: 100%;
+   height: 100%;
+   bottom: 0vh;
+   overflow: hidden;
+   opacity: 0.4;
+   background: linear-gradient(0deg, rgba(0,0,0,0.33) 0%, rgba(0,0,0,0.33) 50%,rgba(0,0,0,0.33) 100% )
+  }
+
+.slider-image
+{
+  position: absolute;
+  height: 90vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+}
+
+.slider-button
+{
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: #000d1a;
+  color: #fff;
+  padding: 10px;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+  border-radius: 50px;
+  user-select: none;
+  transition: 0.3s;
+}
+  .slider-button:hover
+  {
+    transform: scale(1.05);
+    background: #808080;
+  }
+
+.slider-buttons
+{
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  z-index: 10;  
+}
+
+#image-container img 
+{
+  animation: show 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show 
+{
+  from 
+  {
+      transform: translateX(0.7);
+      opacity:0;
+  }
+  to
+  {
+      transform: translateX(1);
+      opacity:1;
+  }
+}
+
+/* ===Beer-card=== */
+.beer-map-title
+{
+  color: #ce7801;
+  text-align: center;
+  text-shadow: 3px 3px black;
+  font-weight: bold;
+  position: relative;
+}
+
+.beer-container
+{
+  position: relative;
+  overflow-x: hidden;
+  width: fit-content;
+}
+
+.beer-row
+{
+  background-color: #1c1c1c;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.beer-description-column
+{
+  display: flex;
+  align-items: center;
+}
+
+.beer-name
+{
+  text-align: left;
+  font-weight: bold;
+  margin-left: 80px;
+  padding-top: 20px;
+}
+
+.beer-name-default
+{
+  color: #808080;
+}
+
+.beer-description
+{
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1100px) 
+{
+  .beer-description
+  {
+    margin-left: 50px;
+    margin-right: 50px;
+  }  
+
+  .beer-name
+  {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) 
+{
+  .beer-description
+  {
+    margin-left: 30px;
+    margin-right: 30px;
+  }  
+
+  .beer-name
+  {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+.beer-image-column
+{
+  display: flex;
+}
+
+.beer-image
+{
+  max-width: 400px;
+  width:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===Coctail-card=== */
+.coctails-container
+{
+  position: relative;
+  overflow-x: hidden;
+  width: fit-content;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.deck-coctails
+{
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.coctail-card
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 380px;
+  word-wrap: break-word;
+  background-color: #1c1c1c;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.2rem;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  color: #fff;
+}
+
+.coctail-image
+{
+  max-height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+.custom-tag {
+  max-width: 100%;
+  height: 500px;
+  background: black;
+}

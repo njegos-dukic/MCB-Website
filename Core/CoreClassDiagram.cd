@@ -1,0 +1,989 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Core.DTO.CompanyDTO">
+    <Position X="1.75" Y="31.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgCIAAAAAIAAAAAQAIAAAAAACAAAAAAAAAEA=</HashCode>
+      <FileName>DTO\Company\CompanyDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.DetailedCompanyDTO">
+    <Position X="1.5" Y="34.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAEAAAAIAAAAAA=</HashCode>
+      <FileName>DTO\Company\DetailedCompanyDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.DetailedGalleryDTO">
+    <Position X="6.75" Y="23.25" Width="3.75" />
+    <InheritanceLine Type="Core.DTO.GalleryBaseDTO" FixedToPoint="true">
+      <Path>
+        <Point X="6.25" Y="21.18" />
+        <Point X="6.25" Y="22.875" />
+        <Point X="8.625" Y="22.875" />
+        <Point X="8.625" Y="23.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Gallery\DetailedGalleryDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.DetailedMediaFileDTO">
+    <Position X="1.25" Y="28.5" Width="3.25" />
+    <InheritanceLine Type="Core.DTO.MediaFileDTO" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.688" Y="27.123" />
+        <Point X="2.688" Y="28.125" />
+        <Point X="3.119" Y="28.125" />
+        <Point X="3.119" Y="28.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Gallery\DetailedMediaFileDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.GalleryBaseDTO">
+    <Position X="5.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAIACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Gallery\GalleryBaseDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.GalleryDTO">
+    <Position X="0.75" Y="23.25" Width="3" />
+    <InheritanceLine Type="Core.DTO.GalleryBaseDTO" ManuallyRouted="true">
+      <Path>
+        <Point X="6.25" Y="21.18" />
+        <Point X="6.25" Y="20.408" />
+        <Point X="2.25" Y="20.408" />
+        <Point X="2.25" Y="23.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Gallery\GalleryDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.GalleryWithThumbnailDTO">
+    <Position X="4" Y="23.25" Width="2.5" />
+    <InheritanceLine Type="Core.DTO.GalleryBaseDTO" FixedToPoint="true">
+      <Path>
+        <Point X="6.25" Y="21.18" />
+        <Point X="6.25" Y="22.875" />
+        <Point X="4.938" Y="22.875" />
+        <Point X="4.938" Y="23.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Gallery\GalleryWithThumbnailDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.MediaFileDTO">
+    <Position X="1.5" Y="25.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgABQAAAAAAAAAAIAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Gallery\MediaFileDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.BaseProductDTO">
+    <Position X="3.75" Y="12.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAgAIAAAAAAACQIAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Product\BaseProductDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.DetailedProductServingDTO">
+    <Position X="10.75" Y="17.25" Width="2.75" />
+    <InheritanceLine Type="Core.DTO.OutputProductServingDTO" ManuallyRouted="true">
+      <Path>
+        <Point X="12" Y="16.483" />
+        <Point X="12" Y="16.875" />
+        <Point X="12.125" Y="16.875" />
+        <Point X="12.125" Y="17.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>DTO\Product\DetailedProductServingDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.InputProductDTO">
+    <Position X="3.25" Y="16.75" Width="2.25" />
+    <InheritanceLine Type="Core.DTO.BaseProductDTO" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="15.007" />
+        <Point X="5" Y="16.375" />
+        <Point X="5.031" Y="16.375" />
+        <Point X="5.031" Y="16.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQCAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Product\InputProductDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.OutputProductDTO">
+    <Position X="6.25" Y="16.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Product\OutputProductDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.OutputProductServingDTO">
+    <Position X="10.5" Y="15.25" Width="3" />
+    <InheritanceLine Type="Core.DTO.ProductServingDTO" ManuallyRouted="true">
+      <Path>
+        <Point X="10.875" Y="14.43" />
+        <Point X="10.875" Y="14.875" />
+        <Point X="12" Y="14.875" />
+        <Point X="12" Y="15.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Product\OutputProductServingDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.ProductServingDTO">
+    <Position X="9.5" Y="12.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>EAAAAIAAAQAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Product\ProductServingDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.BaseOrderDTO">
+    <Position X="17" Y="21.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAgAAKACAIAJIAAAQAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>DTO\Shop\BaseOrderDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.OrderDTO">
+    <Position X="13.75" Y="25.75" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Shop\OrderDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.OutputOrderDTO">
+    <Position X="18.5" Y="25.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Shop\OutputOrderDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.OutputShopProductServingDTO">
+    <Position X="14.25" Y="15.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAgAAAAAAAAAAAAAAAAABAAAAgAQAAIAAA=</HashCode>
+      <FileName>DTO\Shop\OutputShopProductServingDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.ShopProductServingDTO">
+    <Position X="14.25" Y="13.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAIAIAAAQAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Shop\ShopProductServingDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.Menu.MenuProductDTO">
+    <Position X="0.75" Y="19" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Menu\SubmenuProductDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.AdministratorDTO">
+    <Position X="5.25" Y="31.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Administrator\AdministratorDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.PhoneDTO">
+    <Position X="5.25" Y="33.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Company\PhoneDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.SocialMediaDTO">
+    <Position X="5.25" Y="35" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQQAAAAAAAA=</HashCode>
+      <FileName>DTO\Company\SocialMediaDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.WholesaleDTO">
+    <Position X="5.25" Y="37" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAYAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Company\WholesaleDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.ContactDTO">
+    <Position X="9" Y="31.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAg=</HashCode>
+      <FileName>DTO\Contact\ContactDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.EventDTO">
+    <Position X="5.5" Y="25.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>EAAAQAAgAQAgAEAEAAIAAAAAAAAIAAAAAAAAAAABAAA=</HashCode>
+      <FileName>DTO\Event\EventDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.Menu.MenuDTO">
+    <Position X="14.25" Y="27.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgABAAAAAAAAQAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Menu\MenuDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.Menu.MenuItemDTO">
+    <Position X="17.75" Y="27.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAACAAAAAAAAAAAAAAQAAFAAgAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Menu\MenuItemDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.OutputMenuDTO">
+    <Position X="19.25" Y="30.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgABAAAAAAAAQAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Menu\OutputMenuDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.OutputMenuItemDTO">
+    <Position X="12" Y="30.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>EAIAAAAAAAAgAAAAAAAAACQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Menu\OutputMenuItemDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.OutputMenuItemServingDTO">
+    <Position X="16" Y="30.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAQAAAAAAAAAAAAQAAQAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Menu\OutputMenuItemServingDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.ProductTypeDTO">
+    <Position X="0.75" Y="12.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Product\ProductTypeDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.ServingDTO">
+    <Position X="6.5" Y="12.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Product\ServingDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.QuoteDTO">
+    <Position X="5.5" Y="29.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAgAAAAAAAAAACAAAAAAAABAAAAAA=</HashCode>
+      <FileName>DTO\Quote\QuoteDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.OutputProductOrderDTO">
+    <Position X="12.75" Y="19.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQARAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>DTO\Shop\OutputProductOrderDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.DTO.ProductOrderDTO">
+    <Position X="12.75" Y="22" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAQAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\Shop\ProductOrderDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.Configuration.AdministratorConfiguration" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="3.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\AdministratorConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.CompanyConfiguration" BaseTypeListCollapsed="true">
+    <Position X="16.5" Y="5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\CompanyConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.Constants">
+    <Position X="38" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAABCAAAAAAAAAAAABAAAAAAQAAAAAAAAAAI=</HashCode>
+      <FileName>Entity\Configuration\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.Configuration.EventConfiguration" BaseTypeListCollapsed="true">
+    <Position X="34.25" Y="5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\EventConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.GalleryConfiguration" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="3.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\GalleryConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.IngredientConfiguration" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="3.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\IngredientConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.MediaFileConfiguration" BaseTypeListCollapsed="true">
+    <Position X="34.25" Y="3.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\MediaFileConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.MenuConfiguration" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="3.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\MenuConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.MenuItemConfiguration" BaseTypeListCollapsed="true">
+    <Position X="30" Y="3.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\MenuItemConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.OrderConfiguration" BaseTypeListCollapsed="true">
+    <Position X="20" Y="5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\OrderConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.PhoneConfiguration" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="5.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\PhoneConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.ProductConfiguration" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="4.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\ProductConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.ProductOrderConfiguration" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\ProductOrderConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.ProductServingConfiguration" BaseTypeListCollapsed="true">
+    <Position X="30" Y="5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\ProductServingConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.ProductTypeConfiguration" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="5.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\ProductTypeConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.QuoteConfiguration" BaseTypeListCollapsed="true">
+    <Position X="16.5" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\QuoteConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.ServingConfiguration" BaseTypeListCollapsed="true">
+    <Position X="26.5" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\ServingConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.ShopAmountConfiguration" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="5.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\ShopAmountConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.ShopProductServingConfiguration" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="5.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\ShopProductServingConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.SocialMediaConfiguration" BaseTypeListCollapsed="true">
+    <Position X="26.75" Y="5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\SocialMediaConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Configuration.WholesaleConfiguration" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Configuration\WholesaleConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Entity.Administrator">
+    <Position X="0.75" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAACIAAAAAAAAAAAAAAAAAAAACAAAgBAAAAAA=</HashCode>
+      <FileName>Entity\Administrator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.Company">
+    <Position X="16.5" Y="6.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgDIAAAAAIAAAgAQAoggBAAAGAAAAIAAAAEQ=</HashCode>
+      <FileName>Entity\Company.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.Event">
+    <Position X="34.25" Y="6.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAgAQIgAEAEAAIAAAAAQAAIAAAAAAAABAABAAA=</HashCode>
+      <FileName>Entity\Event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.Gallery">
+    <Position X="4.75" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAIgAAAAAAAAAAQAAIACAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Entity\Gallery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.Ingredient">
+    <Position X="19.75" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAgAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Ingredient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.MasterCraftBreweryContext">
+    <Position X="37.75" Y="3.25" Width="7" />
+    <TypeIdentifier>
+      <HashCode>EAMCAAAQARKAABAAAABAACAAkgwhAAAEAAAAIAAAAAQ=</HashCode>
+      <FileName>Entity\MasterCraftBreweryContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.MediaFile">
+    <Position X="34.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABQAAAAAABAAAIAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Entity\MediaFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.Menu">
+    <Position X="8.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIgABAAAAAAAAQAAAAABAAAAAAABAAAAAA=</HashCode>
+      <FileName>Entity\Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.MenuItem">
+    <Position X="29.75" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAQAIBAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\MenuItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.Order">
+    <Position X="20" Y="6.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>MAAAAAgAAKICAIAJIAAAQAAAAAQAAAAAAAIABAAAAAA=</HashCode>
+      <FileName>Entity\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.Phone">
+    <Position X="12.5" Y="7.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAQAAAAAIAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Entity\Phone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.Product">
+    <Position X="12.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAQAQKgAAAAAAAAACQIQAAAAAQAAAAABAAAAAA=</HashCode>
+      <FileName>Entity\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.ProductOrder">
+    <Position X="23.25" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>EAEAAAAAAQAQAAAIAAAAAQAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Entity\ProductOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.ProductServing">
+    <Position X="30" Y="6.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAIAAAQAAAAAAAAAQAAAAAAAAEAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\ProductServing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.ProductType">
+    <Position X="4.75" Y="7.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Entity\ProductType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.Quote">
+    <Position X="16.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAIAAAAAgAAAAAAAAAACAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Entity\Quote.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.Serving">
+    <Position X="26.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAACAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Serving.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.ShopAmount">
+    <Position X="8.25" Y="7.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAIAAAAAAABAAAAAAAAAAAAAAAgARAAAAAA=</HashCode>
+      <FileName>Entity\ShopAmount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.ShopProductServing">
+    <Position X="0.75" Y="7.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>EAAKAIAAAQAAAAAAAAAAAQAAQAQAEAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Entity\ShopProductServing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.SocialMedia">
+    <Position X="26.75" Y="6.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAACQQABAAAAAA=</HashCode>
+      <FileName>Entity\SocialMedia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entity.Wholesale">
+    <Position X="23" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAQAYAAAAAACAAAABAAAAAA=</HashCode>
+      <FileName>Entity\Wholesale.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.ErrorHandling.DbUpdateExceptionHandler">
+    <Position X="46.25" Y="0.5" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAACBAAAAAAAAAAAAAgAAAQAQgA=</HashCode>
+      <FileName>ErrorHandling\ExceptionHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.ErrorHandling.UnauthorizedException">
+    <Position X="52" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ErrorHandling\Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.ErrorHandling.ForbiddenAccessException">
+    <Position X="52" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ErrorHandling\Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.ErrorHandling.ApiKeyAuthenticationException">
+    <Position X="52" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ErrorHandling\Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.ErrorHandling.ResultMessage&lt;T&gt;">
+    <Position X="46.25" Y="3.5" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAEAAAAAAAAAAAAAAQAAAAgAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>ErrorHandling\ResultMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Managers.AdministratorManager">
+    <Position X="23" Y="16.25" Width="6" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\AdministratorManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Managers.ApiKeyManager">
+    <Position X="37" Y="16.25" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAACEAIAAAIAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Managers\ApiKeyManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Managers.LocalFileManager">
+    <Position X="49.75" Y="23.5" Width="8" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAACAAACAAAQAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Managers\LocalFileManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Managers.MenuManager">
+    <Position X="42" Y="16.25" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAYCAAAAAAAABAIAAggAAAAAAAEAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Managers\MenuManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Managers.ProductManager">
+    <Position X="34.25" Y="24.5" Width="6.5" />
+    <TypeIdentifier>
+      <HashCode>AAaCAAAAAAAABAIAAgABAAAQAAEAAAAAgoAAAAAIAIA=</HashCode>
+      <FileName>Managers\ProductManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Managers.QuoteManager">
+    <Position X="63.5" Y="16.25" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAYCAAAAAAAABAAAAgAAAAAAAAEAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Managers\QuoteManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Managers.ShopManager">
+    <Position X="41.75" Y="24.5" Width="7" />
+    <NestedTypes>
+      <Class Name="Core.Managers.ShopManager.ProductOrderConstraints" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Managers\ShopManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAYCAQAAAEAABAACAgABAAAAAAQAAAAggAAAgAAIAAA=</HashCode>
+      <FileName>Managers\ShopManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Managers.LoginManager">
+    <Position X="29.25" Y="23.5" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAgAAAAAABAAAAgAAAAAAAAAAAAAAAAAQAAAAABA=</HashCode>
+      <FileName>Managers\LoginManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Managers.ContactManager">
+    <Position X="23.25" Y="23.5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Managers\ContactManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Managers.EventManager">
+    <Position X="29.5" Y="16.25" Width="7" />
+    <TypeIdentifier>
+      <HashCode>AAYCAAAAAAAABAIAAgABAAAAAAEAAAAAggAAAAAIAIA=</HashCode>
+      <FileName>Managers\EventManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Managers.CompanyManager">
+    <Position X="48" Y="16.25" Width="6.75" />
+    <TypeIdentifier>
+      <HashCode>AAYCAAAAAAAABAIAQgAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Managers\CompanyManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Managers.GalleryManager">
+    <Position X="55.25" Y="16.25" Width="7.75" />
+    <TypeIdentifier>
+      <HashCode>AAYCAAAAQAAABAAAAgAAAAgAAAEAACAAggAAAAAIBIA=</HashCode>
+      <FileName>Managers\GalleryManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Util.AesEncryption">
+    <Position X="16" Y="42.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAQAAEAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Util\AesEncryption.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Util.Authentication">
+    <Position X="20" Y="42.25" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABEAAAAAAAAAAEgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Util\Authentication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Util.AuthenticationData">
+    <Position X="28.75" Y="40.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAQAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Util\Authentication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Util.BasicFileInfo">
+    <Position X="32.25" Y="36.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Util\BasicFileInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Util.EmailSender" BaseTypeListCollapsed="true">
+    <Position X="16" Y="38" Width="8.75" />
+    <TypeIdentifier>
+      <HashCode>AIAAAABAgAAAAAgAAACBAAAgKgAAAAAAABAAAAAAAAE=</HashCode>
+      <FileName>Util\EmailSender.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Util.HtmlGenerator">
+    <Position X="25.25" Y="36.25" Width="6.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAACAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Util\HtmlGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Util.ImageUtil">
+    <Position X="32.25" Y="38.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAIAAQAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Util\ImageUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Util.ThumbnailDimensions">
+    <Position X="28.5" Y="38" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Util\ImageUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Util.InputValidator">
+    <Position X="35.75" Y="40.5" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAMABAACAhAAABSgAAAAgAAAAAACABAAABAAAA=</HashCode>
+      <FileName>Util\InputValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Util.MailConfiguration">
+    <Position X="25.25" Y="38" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAKAAACAACAAAAAAAIAAA=</HashCode>
+      <FileName>Util\MailConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Util.OrderTableConfiguration">
+    <Position X="25.25" Y="40.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Util\OrderTableConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Util.PathBuilder">
+    <Position X="35.75" Y="36.5" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAgAAAAAAAgAAAAAAAAAAAAIhAAAgEAIRAEAAA=</HashCode>
+      <FileName>Util\PathBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Util.Security">
+    <Position X="24.75" Y="42.25" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAgAAAAAAACAAAAAACAAAIAA=</HashCode>
+      <FileName>Util\Security.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Util.StreamUtil">
+    <Position X="28.75" Y="42.25" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAACAAAAAAACAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Util\StreamUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.AutoMapper.ExtensionMethods.MapperExtensionMethods">
+    <Position X="55" Y="0.5" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAQBAAAUEDAAAAAAAAAgAAEAAAAAAA=</HashCode>
+      <FileName>AutoMapper\ExtensionMethods\MapperExtensionMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.AutoMapper.Mapping">
+    <Position X="60.75" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>AutoMapper\Mapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.AutoMapper.MappingProfile">
+    <Position X="60.75" Y="2.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAIAAAAAAAAAAAIAAABAAAAAAIiAAAAAEAA=</HashCode>
+      <FileName>AutoMapper\MappingProfile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Core.Managers.IAdministratorManager">
+    <Position X="23" Y="13.5" Width="5.75" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\Interfaces\IAdministratorManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Core.Managers.IApiKeyManager">
+    <Position X="37" Y="13.5" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAIAAAIAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Managers\Interfaces\IApiKeyManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Core.Managers.ICompanyManager">
+    <Position X="48" Y="13.5" Width="6.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Managers\Interfaces\ICompanyManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Core.Managers.IContactManager">
+    <Position X="23.25" Y="21.25" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\Interfaces\IContactManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Core.Managers.IEventManager">
+    <Position X="29.5" Y="13.5" Width="7.25" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAABAAAAAAEAAAAAAgAAAAAIAIA=</HashCode>
+      <FileName>Managers\Interfaces\IEventManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Core.Managers.IFileManager">
+    <Position X="49.75" Y="21.25" Width="7.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Managers\Interfaces\IFileManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Core.Managers.IGalleryManager">
+    <Position X="55.25" Y="13.5" Width="7.75" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAABIA=</HashCode>
+      <FileName>Managers\Interfaces\IGalleryManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Core.Managers.ILoginManager">
+    <Position X="29.25" Y="21.25" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Managers\Interfaces\ILoginManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Core.Managers.IMenuManager">
+    <Position X="42" Y="13.5" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Managers\Interfaces\IMenuManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Core.Managers.IProductManager">
+    <Position X="34.25" Y="21.25" Width="6.75" />
+    <TypeIdentifier>
+      <HashCode>AAaAAAAAAAAAAAAAAAABAAAAAAEAAAAAAgAAAAAIAIA=</HashCode>
+      <FileName>Managers\Interfaces\IProductManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Core.Managers.IQuoteManager">
+    <Position X="63.5" Y="13.5" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Managers\Interfaces\IQuoteManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Core.Managers.IShopManager">
+    <Position X="41.75" Y="21.25" Width="7" />
+    <TypeIdentifier>
+      <HashCode>AAYAAQAAAEAAAAAAAAABAAAAAAQAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Managers\Interfaces\IShopManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Core.Util.IEmailSender">
+    <Position X="16" Y="36.25" Width="8.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Util\IEmailSender.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Core.Entity.SocialMediaType">
+    <Position X="1.5" Y="37" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAICAAAAQAAAAAEAAAAAAAAAACAAAABAAAAAAAA=</HashCode>
+      <FileName>Entity\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Core.ErrorHandling.OperationStatus">
+    <Position X="52" Y="5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAIAAAAAICBAgAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>ErrorHandling\OperationStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,156 @@
+.food-modal-content .modal-content {
+    color: white;
+    background-color: #000013;
+    height: 90vh;
+    overflow-y: auto;
+}
+
+.food-details-icon {
+    font-size: 2.2em;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.food-details-header {
+    font-size: 3em;
+    border-bottom: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.food-details-footer {
+    border-top: none;
+    justify-content: center;
+}
+
+.food-details-title {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.food-details-list {
+    width: 40%;
+    margin: 1em;
+    margin-top: none;
+    text-align: center;
+    align-items: center;
+}
+
+.food-details-list>ul {
+    list-style-type: none;
+}
+
+.food-details-list>p {
+    font-size: 1.1em;
+    text-align: center;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.food-details-close {
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.food-modal-content .modal-content::-webkit-scrollbar {
+    width: 10px;
+    box-shadow: inset 0 0 5px #2b2c39;
+}
+
+.food-modal-content .modal-content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #2b2c39;
+    border-radius: 10px;
+    background-color: #2b2c39;
+}
+
+.food-modal-content .modal-content::-webkit-scrollbar-thumb {
+    background: #ce7901c9
+}
+
+.food-details-white-separator {
+    width: 60%;
+    background-color: white;
+    margin: 5% 20%;
+    margin-top: 2%;
+}
+
+.food-details-serving-cards {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.food-details-serving-cards>div.row {
+    width: 100%;
+    margin: 0;
+}
+
+.food-details-serving-card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+    background-color: #2b2c39;
+    font-size: 0.6em;
+    max-width: 120px;
+}
+
+.food-details-serving-card>div.card-body {
+    display: flex;
+    border-bottom: none;
+    font-size: 3em;
+    justify-content: center;
+}
+
+.food-details-serving-footer {
+    background: #ce7901c9;
+}
+
+.food-currency {
+    font-size: 0.3em;
+    font-weight: bold;
+    margin-top: 2.7em;
+}
+
+@media screen and (max-width:576px) {
+    .food-modal-content .modal-content {
+        font-size: 0.9em;
+    }
+    .food-details-title {
+        margin-bottom: 0.5em;
+        font-size: 1.4em;
+    }
+    .food-details-icon {
+        font-size: 1.2em;
+    }
+    .food-details-header {
+        font-size: 1.5em;
+    }
+    .food-details-list {
+        width: auto;
+        max-width: 100%;
+        font-size: 1em;
+    }
+    .food-details-list>p {
+        font-size: 1.2em;
+    }
+    .food-details-close {
+        font-size: 1em;
+    }
+    .food-details-serving-card {
+        font-size: 0.8em;
+        max-width: 100px;
+    }
+    .food-details-serving-card>div.card-body {
+        font-size: 1.5em;
+    }
+    .food-currency {
+        font-size: 0.5em;
+        margin-top: 1.1em;
+    }
+}

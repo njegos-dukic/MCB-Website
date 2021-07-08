@@ -1,0 +1,44 @@
+:root {
+    --error-modal-dark: #3d3d3d;
+    --error-modal-ligth: #ffffff;
+  }
+
+.modal-content{
+    align-items: center;
+    background-color: var(--error-modal-dark) ;
+    color:var(--light);
+}
+
+.error-modal-header{
+    width: 100%;
+    vertical-align: center;
+}
+
+.error-modal-title{
+    margin-left: 10px;
+    vertical-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.error-modal-button{
+    font-size: 125%;
+    width: 30%;
+    height: 90%;
+    margin:auto;
+    color:var(--error-modal-dark);
+    background-color: var(--error-modal-ligth);
+}
+
+.error-modal-button:hover{
+    color:var(--error-modal-dark);
+    background-color: var(--light);
+    transition: all 0.5s ease-in;
+    z-index: 2;
+    box-shadow: 0 4px 8px 0 #0c0c0c;
+}
+
+.error-modal-footer{
+    width: 100%;
+    align-items: center;
+}

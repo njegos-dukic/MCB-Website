@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MasterCraftBreweryAPI.Authentication.ApiKeyAuthenticationHandler">
+    <Position X="3.75" Y="1.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Authentication\ApiKeyAuthenticationHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Authentication.ApiKeyAuthenticationOptions" Collapsed="true">
+    <Position X="3.75" Y="0.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Authentication\ApiKeyAuthenticationOptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Authentication.Authentication">
+    <Position X="7" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Authentication\Authentication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Authentication.TokenAuthorizationHandler">
+    <Position X="0.5" Y="1.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Authentication\TokenAuthorizationHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Authentication.TokenAuthorizationRequirement" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Authentication\TokenAuthorizationRequirement.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.AutoMapper.MappingConfiguration">
+    <Position X="0.75" Y="4.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>AutoMapper\MappingConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.AutoMapper.MappingProfile">
+    <Position X="3.75" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAIAAAAAAAAAIAIAAABAAAAAAKiAAAAAEAA=</HashCode>
+      <FileName>AutoMapper\MappingProfile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Controllers.CompanyController">
+    <Position X="0.5" Y="10.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAEAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\CompanyController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Controllers.ContactController">
+    <Position X="8.25" Y="10.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\ContactController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Controllers.EventController">
+    <Position X="13.25" Y="10.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAQAAAAAAABAAAAAAEAAAAAAgAAAAAIAIA=</HashCode>
+      <FileName>Controllers\EventController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Controllers.GalleryController">
+    <Position X="21" Y="10.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAEAAIAAAgAAAAACAIA=</HashCode>
+      <FileName>Controllers\GalleryController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Controllers.LoginController">
+    <Position X="3.25" Y="10.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAASAAAAAAA=</HashCode>
+      <FileName>Controllers\LoginController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Controllers.MasterCraftBreweryControllerBase">
+    <Position X="11" Y="7.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\MasterCraftBreweryControllerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Controllers.MenuController">
+    <Position X="16" Y="10.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAYQAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Controllers\MenuController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Controllers.ProductController">
+    <Position X="23.75" Y="10.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAABAAAAABBAAAAAEAAAAAAgAAAAAIAIA=</HashCode>
+      <FileName>Controllers\ProductController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Controllers.QuoteController">
+    <Position X="6" Y="10.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAEgAAAAAAAAA=</HashCode>
+      <FileName>Controllers\QuoteController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Controllers.RegistrationController">
+    <Position X="10.75" Y="10.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\RegistrationController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Controllers.ShopController">
+    <Position X="18.5" Y="10.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAYAAQAAAEAAAAAAAAABAAAAAAgAAAAAAAAQAAAIAAA=</HashCode>
+      <FileName>Controllers\ShopController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.ErrorHandling.ErrorHandlingMiddleware">
+    <Position X="9.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAgAAAIAAAA=</HashCode>
+      <FileName>ErrorHandling\ErrorHandlingMiddleware.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.ErrorHandling.HttpResultMessage">
+    <Position X="12.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAQAAgCAAAAAAIAAAAAAARAoAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ErrorHandling\HttpResultMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Mapper.ResultMessageExtensionMethods">
+    <Position X="15.5" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mapper\ResultMessageExtensionMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Mapper.ThumbnailExtensionMethods">
+    <Position X="15.5" Y="2" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mapper\ThumbnailExtensionMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Util.AddRequiredHeaderParameter" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="1.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Util\AddRequiredHeaderParameter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Util.FormFileReader">
+    <Position X="12.75" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Util\FormFileReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Util.MvcOptionsExtensions">
+    <Position X="15.5" Y="3.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Util\MvcOptionsExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Util.RoutePrefixConvention" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="3.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Util\MvcOptionsExtensions.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Company.CompanyDeleteWrapper">
+    <Position X="6.75" Y="17.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Wrapper\Company\CompanyDeleteWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPostWrapper">
+    <Position X="0.75" Y="14.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgCAAAAAAIAAAAAQAIAABAAAGAAAAIAAAAEA=</HashCode>
+      <FileName>Wrapper\Company\DetailedCompanyPostWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPutWrapper">
+    <Position X="3.75" Y="14.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgCAAAAAAIAAAAAQAIAABAAAGAAAAIAAAAEA=</HashCode>
+      <FileName>Wrapper\Company\DetailedCompanyPutWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Company.PhoneWrapper">
+    <Position X="0.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Company\PhoneWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Company.SocialMediaWrapper">
+    <Position X="2.25" Y="17.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Company\SocialMediaWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Company.WholesaleWrapper">
+    <Position X="4.5" Y="17.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAIAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Company\WholesaleWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Contact.ContactMessagePostResponseWrapper">
+    <Position X="9.5" Y="15" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Contact\ContactMessagePostResponseWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Contact.ContactMessagePostWrapper">
+    <Position X="9.75" Y="17.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAg=</HashCode>
+      <FileName>Wrapper\Contact\ContactMessagePostWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Event.ChangeImageResponseWrapper">
+    <Position X="13" Y="15" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Event\ChangeImageResponseWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Event.EventDeleteResponseWrapper">
+    <Position X="16" Y="15" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Wrapper\Event\EventDeleteResponseWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Event.EventPostWrapper">
+    <Position X="13" Y="17" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAQAgAEAEAAIAAAAAAAAIAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Wrapper\Event\EventPostWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Event.EventPutWrapper">
+    <Position X="16" Y="17" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAgAQAgAEAEAAIAAAAAAAAIAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Wrapper\Event\EventPutWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.GalleryDeleteWrapper">
+    <Position X="0.5" Y="19.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Wrapper\Gallery\GalleryDeleteWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.GalleryPostWrapper">
+    <Position X="3.25" Y="19.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Gallery\GalleryPostWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.GalleryPutWrapper">
+    <Position X="6" Y="19.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAgAAAAAAAAAAQAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Gallery\GalleryPutWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.MediaFilePostWrapper">
+    <Position X="0.5" Y="21.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Gallery\MediaFilePostWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.MediaFilePutWrapper">
+    <Position X="3.25" Y="21.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABQAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Gallery\MediaFilePutWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.IsLoggedInResponseWrapper">
+    <Position X="12.75" Y="20.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Wrapper\Login\IsLoggedInResponseWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.LoginPostWrapper">
+    <Position X="10.25" Y="20.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Login\LoginPostWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.LoginResponseWrapper">
+    <Position X="10.25" Y="22" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Wrapper\Login\LoginResponseWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Menu.MenuDeleteWrapper">
+    <Position X="2.5" Y="25.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Wrapper\Menu\MenuDeleteWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Menu.MenuItemPostWrapper">
+    <Position X="2.5" Y="23.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Menu\MenuItemPostWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Menu.MenuItemPutWrapper">
+    <Position X="5" Y="23.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAABAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Menu\MenuItemPutWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Menu.MenuPostWrapper">
+    <Position X="0.5" Y="23.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgABAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Menu\MenuPostWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Menu.MenuPutWrapper">
+    <Position X="5" Y="26" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgABAAAAAAAAQAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Menu\MenuPutWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Product.ChangeImageResponseWrapper">
+    <Position X="22.25" Y="15" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Product\ChangeImageResponseWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Product.ProductDeleteWrapper">
+    <Position X="25" Y="15" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Wrapper\Product\ProductDeleteWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Product.ProductPostWrapper">
+    <Position X="22.5" Y="17" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQCgAIAAAAAAACQIAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Product\ProductPostWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Product.ProductPutWrapper">
+    <Position X="25" Y="17" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAQCgAIAAAAAAACQIAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Product\ProductPutWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Product.ProductServingWrapper">
+    <Position X="19.25" Y="17.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Product\ProductServingWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.ProductServingPostWrapper">
+    <Position X="19.25" Y="15" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Product\ProductServingPostWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.QuoteDeleteWrapper">
+    <Position X="23.5" Y="20.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Wrapper\Quote\QuoteDeleteWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.QuotePostWrapper">
+    <Position X="21.25" Y="20.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Wrapper\Quote\QuotePostWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.QuotePutWrapper">
+    <Position X="19" Y="20.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAgAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Wrapper\Quote\QuotePutWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.AdministratorPostResponseWrapper">
+    <Position X="10" Y="25.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Register\AdministratorPostResponseWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.AdministratorPostWrapper">
+    <Position X="13.5" Y="25.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Register\AdministratorPostWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Shop.AddedReponseWrapper">
+    <Position X="17.25" Y="23" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Wrapper\Shop\AddedReponseWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Shop.ChangeImageResponseWrapper">
+    <Position X="20.5" Y="23" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Shop\ChangeImageResponseWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Shop.IsShopProductServingDeletedResponseWrapper">
+    <Position X="23.5" Y="23" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Wrapper\Shop\IsShopProductServingDeletedResponseWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Shop.OrderPostWrapper">
+    <Position X="17.25" Y="25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAKAAAIAIIAAAQAAAAAQAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Shop\OrderPostWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Shop.ProductOrderWrapper">
+    <Position X="20.75" Y="25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAQAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Shop\ProductOrderWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.Shop.ShopProductServingPostWrapper">
+    <Position X="23.5" Y="25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAIAIAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\Shop\ShopProductServingPostWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Wrapper.ThumbnailDimensionsWrapper">
+    <Position X="13.5" Y="23" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrapper\ThumbnailDimensionsWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Startup">
+    <Position X="23.75" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAgAAACAAAAAA=</HashCode>
+      <FileName>Startup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MasterCraftBreweryAPI.Program">
+    <Position X="23.75" Y="2.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="MasterCraftBreweryAPI.ErrorHandling.ContentType">
+    <Position X="11" Y="2.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>ErrorHandling\HttpResultMessage.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

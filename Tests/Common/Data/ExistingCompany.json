@@ -1,0 +1,33 @@
+{
+  "apiKey": "0f8fad5b-d9cb-469f-a165-70867728950e",
+  "name": "Master Craft Brewery Default",
+  "address": "Prijedorska 97, Banja Luka",
+  "coordinates": "44.663301204398566, 17.197738042099605",
+  "phone": "0038765213456",
+  "email": "mcb123@mastercraftbrewery.com",
+  "postalCode": "78000",
+  "socialmedias": [
+    {
+      "name": "Facebook",
+      "type": 0,
+      "url": "https://www.facebook.com/themastercraftbrewery"
+    }
+  ],
+  "wholesales": [
+    {
+      "name": "Moj Market",
+      "coordinates": "44.77025627149073, 17.18976124571519",
+      "address": "Prnjavorska 98, Knezevo"
+    },
+    {
+      "name": "Moj Market",
+      "coordinates": "44.778786447935246, 17.19310864244612",
+      "address": "Svetozara Markovica 14, Banja Luka, Bosna i Hercegovina"
+    }
+  ],
+  "phones": [
+    {
+      "phoneNumber": "+38766623110"
+    }
+  ]
+}

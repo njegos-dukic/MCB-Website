@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+
+.home-font {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.monteserrat-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.quote-font {
+    font-family: 'Rajdhani', sans-serif;
+
+    /* font-family: 'Lobster', cursive; */
+}
+
+.navbar-font {
+    font-family: 'Bebas Neue', cursive;
+    font-size: x-large;
+}
+
+.mate-sc {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.monteserrat-font {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.monteserrat-font-3em {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+}
+
+.monteserrat-font-12px {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.monteserrat-font-09em {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+}
+
+.monteserrat-font-1-8em {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+}
+
+.monteserrat-font-1-2em {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+}

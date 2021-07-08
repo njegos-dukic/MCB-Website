@@ -1,0 +1,59 @@
+﻿[
+  {
+    "name": "Pale Ale",
+    "price": 12.0,
+    "photoUri": "/asfasf/UniorPaleAle.jpg",
+    "description": "Novo u ponudi! Pale ale sa ukusom lipe.",
+    "ingredients": [ "Junece meso", "kajmak", "zelena salata", "krastavac", "hambi" ],
+    "isInStock": true,
+    "canBePurchasedOnline": true,
+    "productServings": [
+      {
+        "productServingId": 0,
+        "productId": 0,
+        "servingId": 0,
+        "price": 10.0
+      },
+      {
+        "productServingId": 0,
+        "productId": 0,
+        "servingId": 0,
+        "price": 12.0
+      }
+    ]
+  },
+  {
+    "name": "MCB Pilsner",
+    "price": 12.0,
+    "photoUri": "/asfasf/UniorPilsner.jpg",
+    "description": "Zlatno žute boje sa bogatom bijelom pjenom, ovo pivo je naš odgovor na industrijski lager. Ukus je lagano biskvitast, sa malo zaostale slatkoće, a u aromi preovladava lagana cvjetna hmeljnost, koja dolazi od plemenitog njemačkog hmelja",
+    "ingredients": [],
+    "isInStock": true,
+    "canBePurchasedOnline": true,
+    "productServings": [
+      {
+        "productServingId": 0,
+        "productId": 0,
+        "servingId": 0,
+        "price": 10.0
+      }
+    ]
+  },
+  {
+    "name": "MCB Stout",
+    "price": 22.0,
+    "photoUri": "/asfasf/UniorStout.jpg",
+    "description": "Tamno pivo bogatog ukusa sa kompleksnim aromama čokolade, kafe i prženog slada. Hmeljnost je u pozadini prisutna sa laganom cvjetnom aromom, a u ukusu preovladava lagana prženost u kojoj se miješaju kafa i čokolada.",
+    "ingredients": [ "Aroma lipe", "jecam", "pivski kvasac" ],
+    "isInStock": true,
+    "canBePurchasedOnline": true,
+    "productServings": [
+      {
+        "productServingId": 0,
+        "productId": 0,
+        "servingId": 0,
+        "price": 20.0
+      }
+    ]
+  }
+]

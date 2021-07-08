@@ -1,0 +1,56 @@
+:root {
+    --admin-index-font-color: white;
+    --admin-index-main-color: #0c0c0c;
+    --admin-index-secondary-color: #1c1c1c;
+    --admin-vibrant-color: #ffff3f;
+    --admin-red-color: rgb(226, 63, 63);
+}
+
+.admin-index-container {
+    min-height: 90vh;
+    background-color: var(--admin-index-main-color);
+    color: var(--admin-index-font-color);
+    padding: 1%;
+}
+
+.admin-action-container {
+    min-height: 60vh;
+    width: 70vw;
+    background-color: var(--admin-index-secondary-color);
+    color: var(--admin-index-font-color);
+    /* animation: fadeInLeft; */
+    /* animation-duration: 1s; */
+}
+
+.admin-index-table {
+    overflow-x: auto;
+    overflow-y: auto;
+    width: 80vw;
+    color: var(--admin-index-font-color);
+    text-align: center;
+    animation: bounceInDown;
+    animation-duration: 1s;
+}
+
+.admin-index-table-header {
+    font-size: 1.2em;
+}
+
+.admin-index-table-rows {
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.admin-index-table-rows:hover {
+    font-size: 0.82em;
+    transition: 100ms;
+    background-color: var(--admin-index-secondary-color);
+}
+
+.admin-index-options-button {
+    font-size: 1.5em;
+}
+
+.admin-index-options-button:hover {
+    color: var(--admin-red-color);
+}

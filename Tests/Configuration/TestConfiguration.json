@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5"
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ],
+  "keyValues": {
+    "databaseConnectionString": "server=127.0.0.1;port=3306;database=MasterCraftBrewery;user=root;password=amazing284,",
+    "fileStorageLocation": "C:\\Users\\njego\\Desktop\\IS\\MCB-Files"
+  }
+}

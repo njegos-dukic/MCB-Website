@@ -1,0 +1,53 @@
+:root {
+    --confirm-delete-dark: #3d3d3d;
+    --confirm-delete-ligth: #ffffff;
+}
+
+.confirm-delete .modal-content {
+    align-items: center;
+    background-color: var(--confirm-delete-dark);
+    color: var(--light);
+}
+
+.confirm-delete-header {
+    width: 100%;
+    vertical-align: center;
+}
+
+.confirm-delete-title {
+    margin-left: 10px;
+    vertical-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.confirm-delete-button {
+    font-size: 125%;
+    width: 30%;
+    height: 90%;
+    margin: auto;
+    color: var(--confirm-delete-ligth);
+    background-color: var(--admin-red-color);
+}
+
+.cancel-delete-button {
+    font-size: 125%;
+    width: 30%;
+    height: 90%;
+    margin: auto;
+    color: var(--confirm-delete-dark);
+    background-color: var(--confirm-delete-ligth);
+}
+
+.confirm-delete-button:hover {
+    color: var(--confirm-delete-dark);
+    background-color: var(--light);
+    transition: all 0.5s ease-in;
+    z-index: 2;
+    box-shadow: 0 4px 8px 0 #0c0c0c;
+}
+
+.confirm-delete-footer {
+    width: 100%;
+    align-items: center;
+}

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap');
+
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.base-container
+{
+  width: 100%;  
+  display: flex;
+  align-content: center;
+  justify-content: left;
+  background: #202020;
+}
+
+.contact-form 
+{
+  width: 26rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.3rem;
+}
+
+.contact-input
+{
+  border: none;
+  background-color: #E8E8E8;
+  font-size: 0.9rem;
+  padding: 5px;
+  min-height: 3.0rem;
+  margin-bottom: 0.2rem;
+}
+
+.contact-text-area
+{
+  border: none;
+  background-color: #E8E8E8;
+  min-height: 200px;
+  min-width: 100%;
+  max-width: 100%;
+  font-size: 0.9rem;
+  padding: 5px;
+  margin-bottom: 0.2rem;
+}
+
+.contact-submit-button
+{
+  margin-top: 1.2rem;
+  border: none;
+  background-color: #ffff3f;
+  font-size: 0.9rem;
+  width: 70%;
+  height: 50px;
+  padding: 5px;
+  min-height: 2.1rem;
+  align-self: center;
+}
+
+.captcha
+{
+  align-self: center;
+}
+
+.contact-submit-button:hover
+{
+  background-color: #373809;
+  color: white;
+}
+
+.input-error, .captcha-error
+{
+  color: rgb(226, 63, 63);
+  margin-bottom: 1.3rem;
+  font-size: 0.8rem;
+}
+
+.captcha-error
+{
+  margin-top: 0.2rem;
+  align-self: center;
+}
+
+.wholesale
+{
+  color: white;
+  font-weight: bolder;
+}
+
+.map-wrapper
+{
+    height: 73.6vh;
+    max-width: 147vh;
+    padding-top: 1.3rem;
+}
+
+
+@media screen and (max-width: 1450px) 
+{
+    .map-wrapper
+    {
+        max-width: 121vh;
+    }
+}
+
+@media screen and (max-width: 1400px) 
+{
+    .map-wrapper
+    {
+        max-width: 113vh;
+    }
+}
+
+@media screen and (max-width: 1250px) 
+{
+  .base-container
+  {
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .contact-container
+  {
+    max-width: 80%;
+    min-width: 80%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .contact-form
+  {
+    max-width: 80%;
+    min-width: 80%;
+    margin-left: 10%;
+
+  }
+
+  .map-wrapper
+  {
+    margin-top: 10%;
+    margin-left: 5%;
+    max-width: 90%;
+    padding: 0px;
+    margin-bottom: 70px;
+  }
+
+}

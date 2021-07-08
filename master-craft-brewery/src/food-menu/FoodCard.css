@@ -1,0 +1,118 @@
+.padding-0 {
+    padding: 0px;
+}
+
+.food-card {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5em;
+    z-index: 2;
+    background-color: var(--food-menu-card-background);
+    color: var(--food-menu-ternary-font);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    height: calc(100% - 5em);
+}
+
+.food-card-body {
+    width: inherit;
+}
+
+.food-card-img {
+    width: 9em;
+    height: 9em;
+    margin-top: -4em;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+.food-card-footer {
+    position: relative;
+    background-color: transparent;
+    font-size: 0.8em;
+    color: var(--food-menu-ternary-font);
+    text-align: center;
+    flex-direction: row;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.food-card-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.food-card-details-icon {
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+
+.food-card:hover {
+    box-shadow: 0 8px 16px 0 #000013;
+}
+
+.food-card:hover .food-card-details-icon {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+    }
+    70% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .food-card-body {
+        padding: 0;
+    }
+    .food-card {
+        margin-bottom: 2em;
+        height: calc(100% - 2em);
+    }
+    .food-card-img {
+        width: 6em;
+        height: 6em;
+        margin: 0px;
+    }
+    .food-card-title {
+        font-size: 1em;
+        margin: 0 5px;
+    }
+    .food-card-title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    .food-card-icon {
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .food-card {
+        padding: 5px 5px;
+        margin-bottom: 4em;
+        height: calc(100% - 4em);
+    }
+    .food-card-img {
+        width: 10em;
+        height: 10em;
+        margin-top: -3em;
+    }
+    .food-card-title {
+        font-weight: bold;
+        font-size: 2em;
+    }
+}

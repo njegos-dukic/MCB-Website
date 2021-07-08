@@ -1,0 +1,16 @@
+{
+  "name": "New menu",
+  "description": "New menu description about the wasfasfasfasfasfsfafasfasf....",
+  "menuItems": [
+    {
+      "menuItemId": 0,
+      "menuId": 0,
+      "productServingId": 0
+    },
+    {
+      "menuItemId": 0,
+      "menuId": 0,
+      "productServingId": 0
+    }
+  ]
+}

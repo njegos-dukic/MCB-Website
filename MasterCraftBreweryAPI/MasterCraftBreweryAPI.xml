@@ -1,0 +1,994 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MasterCraftBreweryAPI</name>
+    </assembly>
+    <members>
+        <member name="T:MasterCraftBreweryAPI.Controllers.CompanyController">
+            <summary>
+            Contains endpoints and logic for manipulating company 
+            information, like basic information, social media and wholesale places.
+            </summary>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.CompanyController.Update(MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPutWrapper)">
+            <summary>
+            Updates company based on a unique identifier assuming that whole Company object is going to be updated.
+            </summary>
+            <param name="company">The object containing new information <see cref="T:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPutWrapper"></see>/></param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.CompanyController.GetCompanyInfo">
+            <summary>
+             Returns a company with details such as social media and wholesales, based on 
+             the specified unique api key.
+             </summary>
+             <returns>Company with details, if such is found, or null otherwise</returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.ContactController.Send(MasterCraftBreweryAPI.Wrapper.Contact.ContactMessagePostWrapper)">
+            <summary>
+            Sends contact message.
+            </summary>
+            <param name="wrapper">Contact message and sender's information</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.EventController.Add(MasterCraftBreweryAPI.Wrapper.Event.EventPostWrapper)">
+            <summary>
+            Adds new event into the database if there is no such event already 
+            saved.
+            </summary>
+            <param name="eventWrapper">The information about the event</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.EventController.Update(MasterCraftBreweryAPI.Wrapper.Event.EventPutWrapper)">
+            <summary>
+            Updates the whole event object. 
+            Event needs to be identified using its unique identifier.
+            If there is no such event in the database, OperationStatus.NotFound is returned.
+            </summary>
+            <param name="eventWrapper">New information about the event with existing unique identifier</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.EventController.Delete(System.Int32)">
+            <summary>
+            Completely deletes an event from the database, based on specific unique identifier.
+            </summary>
+            <param name="eventId">Unique identifier for the event</param>
+            <returns>True if deleted, false if not</returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.EventController.GetById(System.Int32)">
+            <summary>
+            Finds and returns a specific event from database.
+            </summary>
+            <param name="eventId">Unique identifier for the event</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.EventController.GetAll">
+            <summary>
+            Returns all current events from database.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.EventController.ChangeImage(System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Changes image of an event.
+            </summary>
+            <param name="eventId">Unique identifier for the event</param>
+            <param name="file">Information about the file: filename and data</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.EventController.DownloadImage(System.Int32,MasterCraftBreweryAPI.Wrapper.ThumbnailDimensionsWrapper)">
+            <summary>
+            Downloads image for specified event, if such event exists. If the event does not exist,
+            method returns no content. If specified image is not found or it is not set, method returns null.
+            </summary>
+            <param name="eventId">Unique identifier for the event</param>
+            <param name="dimensions">Dimensions for the event's image</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.GalleryController.Add(MasterCraftBreweryAPI.Wrapper.GalleryPostWrapper)">
+            <summary>
+            Adds new gallery to the database with gallery name and media files
+            </summary>
+            <param name="galleryPostWrapper">The gallery information with media files data</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.GalleryController.AddImages(System.Int32,System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile})">
+            <summary>
+            
+            </summary>
+            <param name="galleryId">Unique identifier of gallery</param>
+            <param name="images">Images</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.GalleryController.Update(MasterCraftBreweryAPI.Wrapper.GalleryPutWrapper)">
+            <summary>
+            Updates gallery with media files
+            </summary>
+            <param name="galleryPutWrapper">The gallery put information with media file data</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.GalleryController.Delete(System.Int32)">
+            <summary>
+            Deletes gallery and media files from data base and file storage.
+            </summary>
+            <param name="galleryId">Unique identifier of the gallery</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.GalleryController.GetById(System.Int32,MasterCraftBreweryAPI.Wrapper.ThumbnailDimensionsWrapper)">
+            <summary>
+            Returns gallery by unique identifier that is sent, and downloads 
+            all media files that are in that gallery
+            </summary>
+            <param name="galleryId">Unique identifier of the gallery</param>
+            <param name="dimensions">Image dimensions</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.GalleryController.GetAll(MasterCraftBreweryAPI.Wrapper.ThumbnailDimensionsWrapper)">
+            <summary>
+            Returns informations about all galleries and returns their thumbnail images.
+            </summary>
+            <param name="dimensions">Image dimensions</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.LoginController.Login(MasterCraftBreweryAPI.Wrapper.LoginPostWrapper)">
+            <summary>
+            Login to the application using credentials, and get authentication token as base64 string.
+            </summary>
+            <param name="data">Credentials</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.LoginController.IsLoggedIn">
+            <summary>
+            Checks if user is logged in.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.MenuController.Add(MasterCraftBreweryAPI.Wrapper.Menu.MenuPostWrapper)">
+            <summary>
+            Adds new menu to the database, including menus with product items (specific serving of the product).
+            </summary>
+            <param name="menu">Information about the menu</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.MenuController.Update(MasterCraftBreweryAPI.Wrapper.Menu.MenuPutWrapper)">
+            <summary>
+            Updates specific menu. If menu with provided unique identifier does 
+            not exist, no content will be returned. 
+            menus on the menu are also updates. If menu does not exist, 
+            a new menu will be created.
+            </summary>
+            <param name="menu">Informations about the menu</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.MenuController.Delete(System.Int32)">
+            <summary>
+            Deletes menu with menus from the database.
+            </summary>
+            <param name="menuId">Unique identifier for the menu</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.MenuController.GetAll">
+            <summary>
+            Finds, maps and returns list of menus from the database.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.MenuController.GetById(System.Int32)">
+            <summary>
+            Finds and returns menu based on specified unique identifier. 
+            If no menu is found, no content will be returned.
+            </summary>
+            <param name="menuId">Unique identifier for the menu</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.ProductController.Add(MasterCraftBreweryAPI.Wrapper.Product.ProductPostWrapper)">
+            <summary>
+            Adds new product into the database if there is no such product already 
+            saved. It relates product with a certain product type and with different serving options.
+            </summary>
+            <param name="product">The product information with serving options and 
+            unique identificator for the product type</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.ProductController.Update(MasterCraftBreweryAPI.Wrapper.Product.ProductPutWrapper)">
+            <summary>
+            Updates the whole product object with product type and serving options. 
+            Product needs to be identified using its unique identifier.
+            If there is no such product in the database, OperationStatus.NotFound is returned.
+            </summary>
+            <param name="product">New product information with already existing unique identifier</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.ProductController.Delete(System.Int32)">
+            <summary>
+            Completely deletes a product from the database, based on specific unique identifier.
+            </summary>
+            <param name="productId">Unique identifier for the product</param>
+            <returns>True if deleted, false if not</returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.ProductController.GetById(System.Int32)">
+            <summary>
+            Finds and returns a specific product from database, 
+            with possible servings and product type.
+            </summary>
+            <param name="productId">Unique identifier for the product</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.ProductController.GetAll(System.String)">
+            <summary>
+            Returns all current products from database.
+            If productTypeName is specified, then returns all products from database that belong to the same product category (product type).
+            </summary>
+            <paramref name="productTypeName">Unique name identifier for the product type (optional)</paramref>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.ProductController.GetAllProductServings">
+            <summary>
+            Returns all current product servings related to a company from database.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.ProductController.ChangeImage(System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Changes image of an product.
+            </summary>
+            <param name="productId">Unique identifier for the product</param>
+            <param name="file">Information about the file: filename and data</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.ProductController.DownloadImage(System.Int32,MasterCraftBreweryAPI.Wrapper.ThumbnailDimensionsWrapper)">
+            <summary>
+            Downloads image for specified product, if such product exists. If product does not exist,
+            method returns no content. If specified image is not found or it is not set, method returns null.
+            </summary>
+            <param name="productId">Unique identifier for the product</param>
+            <param name="dimensions">Dimensions for the product's image</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.QuoteController.Add(MasterCraftBreweryAPI.Wrapper.QuotePostWrapper)">
+            <summary>
+            Adds new quote to the database.
+            </summary>
+            <param name="quote"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.QuoteController.Update(MasterCraftBreweryAPI.Wrapper.QuotePutWrapper)">
+            <summary>
+            Updates quote with data that is sent from body.
+            Quote must be identified using its unique identifier.
+            If there is no such quote in the database, OperationStatus.NotFound is returned.
+            </summary>
+            <param name="quote"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.QuoteController.Delete(System.Int32)">
+            <summary>
+            Completely deletes a quote from the database, based on specific unique identifier.
+            </summary>
+            <param name="quoteId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.QuoteController.GetAll">
+            <summary>
+            Returns all current quotes from database.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.RegistrationController.RegisterAsAdministrator(MasterCraftBreweryAPI.Wrapper.AdministratorPostWrapper)">
+            <summary>
+            Authorized administrator can register another administrator by calling this endpoint.
+            </summary>
+            <param name="wrapper">Credentials of the new administrator</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.ShopController.Add(MasterCraftBreweryAPI.Wrapper.Shop.ShopProductServingPostWrapper)">
+            <summary>
+            To make product available on online shop, this method adds important information 
+            about the product, for example, the amount that can be ordered, price on online shop etc.
+            </summary>
+            <param name="wrapper">Information about the product requirements for online purchase</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.ShopController.GetShopProductServings">
+            <summary>
+            Returns information about the products that are related to online shop.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.ShopController.ChangeImage(System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Changes image that a product should have on online shop.
+            </summary>
+            <param name="shopProductServingId">Unique identifier for the product</param>
+            <param name="file">Information about the image</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.ShopController.DownloadImage(System.Int32,MasterCraftBreweryAPI.Wrapper.ThumbnailDimensionsWrapper)">
+            <summary>
+            Downloads image related to product on online shop.
+            </summary>
+            <param name="shopProductServingId">Unique identifier for the product</param>
+            <param name="dimensions">Dimensions for the image</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.ShopController.PlaceOrder(MasterCraftBreweryAPI.Wrapper.Shop.OrderPostWrapper)">
+            <summary>
+            Enable user to place an order. If order is valid, it will be saved. 
+            </summary>
+            <param name="wrapper">Information about the order</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.ShopController.ChangeOrderStatus(System.Int32,System.Boolean)">
+            <summary>
+            Chages status of the order, marking it as delivered or not.
+            </summary>
+            <param name="orderId">Unique identifier for the order</param>
+            <param name="isDelivered">Is the order delievered?</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Controllers.ShopController.GetOrders(System.Nullable{System.Boolean})">
+            <summary>
+            Maps and returns all orderes that are (not) delivered (depending on method's argument 
+            "isDelivered".
+            </summary>
+            <param name="isDelivered">Flag for filtering orders</param>
+            <returns></returns>
+        </member>
+        <member name="T:MasterCraftBreweryAPI.ErrorHandling.ErrorHandlingMiddleware">
+            <summary>
+            Capture synchronous and asynchronous exceptions from the HTTP pipeline and generate error responses. 
+            </summary>
+        </member>
+        <member name="T:MasterCraftBreweryAPI.ErrorHandling.ContentType">
+            <summary>
+            Type of a content that needs to be returned in body of a HTTP response
+            </summary>
+        </member>
+        <member name="T:MasterCraftBreweryAPI.ErrorHandling.HttpResultMessage">
+            <summary>
+            Resposible for sending result to client based on message from managers
+            </summary>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.ErrorHandling.HttpResultMessage.FilteredResult``1(Core.ErrorHandling.ResultMessage{``0},MasterCraftBreweryAPI.ErrorHandling.ContentType)">
+            <summary>
+            Returns result with appropriate HTTP error code
+            </summary>
+            <typeparam name="T">Parameter type that needs to be class</typeparam>
+            <param name="result">Data to analyze and send to client</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.ErrorHandling.HttpResultMessage.ErrorWithDetails``1(Core.ErrorHandling.ResultMessage{``0})">
+            <summary>
+            Returns result with appropriate HTTP error code and detailed message
+            </summary>
+            <typeparam name="T">Parameter type that needs to be class</typeparam>
+            <param name="result">Data to analyze and send to client</param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.ErrorHandling.HttpResultMessage.Success``1(Core.ErrorHandling.ResultMessage{``0},MasterCraftBreweryAPI.ErrorHandling.ContentType)">
+            <summary>
+            Returns result with HTTP success code
+            </summary>
+            <typeparam name="T">Parameter type that needs to be class</typeparam>
+            <param name="result">Data to analyze and send to client</param>
+            <returns></returns>
+        </member>
+        <member name="T:MasterCraftBreweryAPI.Mapper.ResultMessageExtensionMethods">
+            <summary>
+            Encapsulates mapper logic related to objects of a type ResultMessage <see cref="T:Core.ErrorHandling.ResultMessage`1"/>
+            </summary>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Mapper.ResultMessageExtensionMethods.Map``2(Core.ErrorHandling.ResultMessage{``1})">
+            <summary>
+            Because ResultMessage is a generic class, this method allows user to convert from ResultMessage<typeparamref name="OriginalType"/>
+            to ResultMessage<typeparamref name="WrapperType"/>, thus mapping operation result from OriginalType to Wrapper. It can be used for 
+            wrapping primitive operation results in class objects.
+            </summary>
+            <typeparam name="WrapperType">Type to convert to</typeparam>
+            <typeparam name="OriginalType">Original type</typeparam>
+            <param name="resultMessage">Object that is mapped</param>
+            <returns>New ResultMessage object</returns>
+        </member>
+        <member name="M:MasterCraftBreweryAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+             This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+        </member>
+        <member name="T:MasterCraftBreweryAPI.Util.MvcOptionsExtensions">
+            <summary>
+             Implements MvcOptions extention methods in order to use a global route prefix in controllers
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.CompanyDeleteWrapper.IsDeleted">
+            <summary>
+            Is company deleted?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPostWrapper.Name">
+            <summary>
+            Unique name of a company
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPostWrapper.Address">
+            <summary>
+            Address of a company
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPostWrapper.PostalCode">
+            <summary>
+            Postal code for the company
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPostWrapper.Coordinates">
+            <summary>
+            Coordinates that specify company's location
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPostWrapper.Email">
+            <summary>
+            Email for a company
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPostWrapper.Fax">
+            <summary>
+            Fax for a company
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPostWrapper.ShopDescription">
+            <summary>
+            Online shop description
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPostWrapper.SocialMedias">
+            <summary>
+            List of social medias related to the company
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPostWrapper.Wholesales">
+            <summary>
+            List of wholesales related to the company
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPostWrapper.Phones">
+            <summary>
+            List of company's phone numbers
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPutWrapper.Name">
+            <summary>
+            Unique name of a company
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPutWrapper.Address">
+            <summary>
+            Address of a company
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPutWrapper.PostalCode">
+            <summary>
+            Postal code for the company
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPutWrapper.Coordinates">
+            <summary>
+            Coordinates that specify company's location
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPutWrapper.Email">
+            <summary>
+            Email for a company
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPutWrapper.Fax">
+            <summary>
+            Fax for a company
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPutWrapper.ShopDescription">
+            <summary>
+            Online shop description
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPutWrapper.SocialMedias">
+            <summary>
+            List of social medias related to the company
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPutWrapper.Wholesales">
+            <summary>
+            List of wholesales related to the company
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.DetailedCompanyPutWrapper.Phones">
+            <summary>
+            List of company's phone numbers
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.PhoneWrapper.PhoneNumber">
+            <summary>
+            Phone number
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.SocialMediaWrapper.Url">
+            <summary>
+            Url for the social media
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.SocialMediaWrapper.Type">
+            <summary>
+            Type of the social media as an number
+            [0 - Facebook, 1 - Twitter, 2 - LinkedIn, 3 - Instagram, 4 - YouTube, 5 -  OLX]
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.WholesaleWrapper.Name">
+            <summary>
+            Name for the wholesale
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.WholesaleWrapper.Address">
+            <summary>
+            Address for the wholesale
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Company.WholesaleWrapper.Coordinates">
+            <summary>
+            Coordinates that specify location of the wholesale
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Contact.ContactMessagePostResponseWrapper.IsSent">
+            <summary>
+            Is message sent?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Contact.ContactMessagePostWrapper.FirstName">
+            <summary>
+            First name
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Contact.ContactMessagePostWrapper.LastName">
+            <summary>
+            Last name
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Contact.ContactMessagePostWrapper.Email">
+            <summary>
+            Email of a sender
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Contact.ContactMessagePostWrapper.Message">
+            <summary>
+            Contact message
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.ChangeImageResponseWrapper.IsChanged">
+            <summary>
+            Is the image for the event changed?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventDeleteResponseWrapper.IsDeleted">
+            <summary>
+            Is the event deleted?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventPostWrapper.Organizer">
+            <summary>
+            Organizer of the event
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventPostWrapper.BeginOn">
+            <summary>
+            When does the event begin?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventPostWrapper.EndOn">
+            <summary>
+            When does the event end?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventPostWrapper.DurationInHours">
+            <summary>
+            Duration of the event in hours
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventPostWrapper.Price">
+            <summary>
+            Price for attending the event
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventPostWrapper.Title">
+            <summary>
+            Title of the event
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventPostWrapper.Description">
+            <summary>
+            Description for the event
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventPostWrapper.Location">
+            <summary>
+            Location of the event
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventPutWrapper.EventId">
+            <summary>
+            Unique identifier for the event
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventPutWrapper.Organizer">
+            <summary>
+            Organizer of the event
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventPutWrapper.BeginOn">
+            <summary>
+            When does the event begin?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventPutWrapper.EndOn">
+            <summary>
+            When does the event end?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventPutWrapper.DurationInHours">
+            <summary>
+            Duration of the event in hours
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventPutWrapper.Price">
+            <summary>
+            Price for attending the event
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventPutWrapper.Title">
+            <summary>
+            Title of the event
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventPutWrapper.Description">
+            <summary>
+            Description for the event
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Event.EventPutWrapper.Location">
+            <summary>
+            Location of the event
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.GalleryDeleteWrapper.IsDeleted">
+            <summary>
+            Is gallery deleted?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.GalleryPostWrapper.Name">
+            <summary>
+            Name of the gallery
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.GalleryPostWrapper.Description">
+            <summary>
+            Description of the gallery
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.GalleryPutWrapper.GalleryId">
+            <summary>
+            Unique identifier of the gallery
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.GalleryPutWrapper.Name">
+            <summary>
+            Gallery name
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.GalleryPutWrapper.Description">
+            <summary>
+            Gallery description
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.GalleryPutWrapper.MediaFiles">
+            <summary>
+            Gallery images
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.MediaFilePostWrapper.PhotoInfo">
+            <summary>
+            Image file name and data
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.MediaFilePutWrapper.MediaFileId">
+            <summary>
+            Unique identifier of media file
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.MediaFilePutWrapper.GalleryId">
+            <summary>
+            Unique identifier of the gallery that contains media file
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.MediaFilePutWrapper.IsThumbnail">
+            <summary>
+            Says if image is thumbnail
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.IsLoggedInResponseWrapper.IsLoggedIn">
+            <summary>
+            Is user logged in?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.LoginPostWrapper.Email">
+            <summary>
+            Email address
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.LoginPostWrapper.Password">
+            <summary>
+            Password
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Menu.MenuDeleteWrapper.IsDeleted">
+            <summary>
+            Is company deleted?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Menu.MenuItemPostWrapper.ProductServingId">
+            <summary>
+            Product serving on the menu
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Menu.MenuItemPutWrapper.MenuItemId">
+            <summary>
+            Unique identifier for the menu item
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Menu.MenuItemPutWrapper.MenuId">
+            <summary>
+            Unique identifier for the menu that this item belongs to
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Menu.MenuItemPutWrapper.ProductServingId">
+            <summary>
+            Product serving on the menu
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Menu.MenuPostWrapper.Name">
+            <summary>
+            Name of the menu
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Menu.MenuPostWrapper.Description">
+            <summary>
+            menu's description
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Menu.MenuPostWrapper.MenuItems">
+            <summary>
+            Items on the menu
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Menu.MenuPutWrapper.MenuId">
+            <summary>
+            Unique identifier for the menu
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Menu.MenuPutWrapper.Name">
+            <summary>
+            Name of the menu
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Menu.MenuPutWrapper.Description">
+            <summary>
+            menu's description
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Menu.MenuPutWrapper.MenuItems">
+            <summary>
+            Items on the menu
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ChangeImageResponseWrapper.IsChanged">
+            <summary>
+            Is company deleted?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductDeleteWrapper.IsDeleted">
+            <summary>
+            Is company deleted?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductPostWrapper.Name">
+            <summary>
+            Name of the product
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductPostWrapper.Description">
+            <summary>
+            Description of the product
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductPostWrapper.Ingredients">
+            <summary>
+            Ingredients of the product
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductPostWrapper.IsInStock">
+            <summary>
+            Is the product available in stock?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductPostWrapper.CanBePurchasedOnline">
+            <summary>
+            Can the product be purchased online?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductPostWrapper.HexColor">
+            <summary>
+            Hexadecimal value for a color
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductPostWrapper.ProductTypeId">
+            <summary>
+            Unique identifier for the type of the product
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductPostWrapper.ProductServings">
+            <summary>
+            List of the possible servings of the product with price
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductPutWrapper.ProductId">
+            <summary>
+            Unique identifer for the product
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductPutWrapper.Name">
+            <summary>
+            Name of the product
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductPutWrapper.Description">
+            <summary>
+            Description of the product
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductPutWrapper.Ingredients">
+            <summary>
+            Ingredients of the product
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductPutWrapper.IsInStock">
+            <summary>
+            Is the product available in stock?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductPutWrapper.CanBePurchasedOnline">
+            <summary>
+            Can the product be purchased online?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductPutWrapper.HexColor">
+            <summary>
+            Hexadecimal value for a color
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductPutWrapper.ProductTypeId">
+            <summary>
+            Unique identifier for the type of the product
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductPutWrapper.ProductServings">
+            <summary>
+            List of the possible servings of the product with price
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductServingWrapper.ProductServingId">
+            <summary>
+            Unique identifier for the serving of the product
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Product.ProductServingWrapper.ProductId">
+            <summary>
+            Unique identifier for the product
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.ProductServingPostWrapper.ServingId">
+            <summary>
+            Unique identifier for the serving related to the product
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.ProductServingPostWrapper.Price">
+            <summary>
+            Price of the product's serving
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.QuoteDeleteWrapper.IsDeleted">
+            <summary>
+            Is quote deleted?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.QuotePostWrapper.QuoteText">
+            <summary>
+            Text of the quote
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.QuotePostWrapper.Author">
+            <summary>
+            Author of the text quote
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.QuotePutWrapper.QuoteId">
+            <summary>
+            Unique identifier for quote
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.QuotePutWrapper.QuoteText">
+            <summary>
+            Text of the quote
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.QuotePutWrapper.Author">
+            <summary>
+            Author of the text quote
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.AdministratorPostResponseWrapper.IsRegistered">
+            <summary>
+            Is administrator successfully registered?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.AdministratorPostWrapper.Email">
+            <summary>
+            Email of the new administrator
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.AdministratorPostWrapper.Password">
+            <summary>
+            Password
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Shop.ChangeImageResponseWrapper.IsChanged">
+            <summary>
+            Is image changed?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Shop.IsShopProductServingDeletedResponseWrapper.IsDeleted">
+            <summary>
+            Is deleted?
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Shop.ProductOrderWrapper.ShopProductServingId">
+            <summary>
+            Unique identifier for a product serving
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Shop.ProductOrderWrapper.Price">
+            <summary>
+            Total price
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Shop.ProductOrderWrapper.OrderedAmount">
+            <summary>
+            Number of same products
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Shop.ShopProductServingPostWrapper.ProductId">
+            <summary>
+            Unique identifier for the related product
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Shop.ShopProductServingPostWrapper.ServingId">
+            <summary>
+            Unique identifier for the related serving size
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Shop.ShopProductServingPostWrapper.ShopAmountId">
+            <summary>
+            Unique identifier for the related shop amount
+            </summary>
+        </member>
+        <member name="P:MasterCraftBreweryAPI.Wrapper.Shop.ShopProductServingPostWrapper.Price">
+            <summary>
+            Price
+            </summary>
+        </member>
+    </members>
+</doc>

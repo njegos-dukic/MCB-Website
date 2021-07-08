@@ -1,0 +1,17 @@
+﻿{
+  "name": "Burger sa kajmakom",
+  "price": 12.0,
+  "photoUri": "/asfasf/UniorKajmak.jpg",
+  "description": "Topi se u ustima.",
+  "ingredients": [ "Junece meso", "kajmak", "zelena salata", "krastavac", "hambi" ],
+  "isInStock": true,
+  "canBePurchasedOnline": true,
+  "productServings": [
+    {
+      "productServingId": 0,
+      "productId": 0,
+      "servingId": 0,
+      "price": 10.0
+    }
+  ]
+}

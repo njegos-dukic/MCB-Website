@@ -1,0 +1,76 @@
+:root {
+    --error-page-light: white;
+    --error-page-dark: #1d1d1d;
+}
+
+.error-page {
+    color: var(--error-page-light);
+    background-color: var(--error-page-dark);
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+.error-page-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10em;
+    margin-right: 2em;
+    max-width: 30%;
+}
+
+.error-page-notification {
+    font-size: 5em;
+    color: #e4b503;
+    font-weight: bold;
+}
+
+.error-page-message {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.error-page-button-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.error-page-button {
+    color: var(--error-page-light);
+    background-color: #1c1c1c;
+    font-size: 2em;
+}
+
+.error-page-button:hover {
+    transition: all 0.5s ease-in;
+    box-shadow: 0 4px 8px 0 #0c0c0c;
+    background-color: var(--error-page-dark);
+}
+
+.error-page-image-container {
+    margin-top: 10em;
+}
+
+.error-page-image {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:768px) {
+    .error-page {
+        font-size: small;
+    }
+    .error-page-text {
+        margin: 4em;
+        margin-top: 13em;
+    }
+    .error-page-image-container {
+        margin-top: 17em;
+        margin-right: 4em;
+    }
+}

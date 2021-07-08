@@ -1,0 +1,61 @@
+[
+  {
+    "name": "menu1",
+    "description": "Initial description about the menu 1",
+    "menuItems": [
+      {
+        "menuItemId": 0,
+        "menuId": 0,
+        "productServingId": 0
+      },
+      {
+        "menuItemId": 0,
+        "menuId": 0,
+        "productServingId": 0
+      },
+      {
+        "menuItemId": 0,
+        "menuId": 0,
+        "productServingId": 0
+      }
+    ]
+  },
+  {
+    "name": "menu2",
+    "description": "Initial description about the menu 2",
+    "menuItems": [
+      {
+        "menuItemId": 0,
+        "menuId": 0,
+        "productServingId": 0
+      }
+    ]
+  },
+  {
+    "name": "menu3",
+    "description": "Initial description about the menu 3",
+    "menuItems": [
+      {
+        "menuItemId": 0,
+        "menuId": 0,
+        "productServingId": 0
+      },
+      {
+        "menuItemId": 0,
+        "menuId": 0,
+        "productServingId": 0
+      }
+    ]
+  },
+  {
+    "name": "menu4",
+    "description": "Initial description about the menu 4",
+    "menuItems": [
+      {
+        "menuItemId": 0,
+        "menuId": 0,
+        "productServingId": 0
+      }
+    ]
+  }
+]

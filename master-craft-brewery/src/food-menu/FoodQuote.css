@@ -1,0 +1,75 @@
+.food-qoute-container {
+    padding: 5%;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: var(--food-menu-margin);
+    z-index: 10;
+    transform: translateY(-2000px);
+    animation: 2s slideIn ease-in-out forwards 1s;
+    background-image: url('../assets/food-menu-quote-chicken.jpg');
+    background-size: cover;
+    background-attachment: local;
+    background-position-y: center;
+}
+
+.food-qoute-text {
+    font-weight: bolder;
+    font-size: 2em;
+    text-align: center;
+    margin: 0 2em;
+}
+
+.food-qoute-sign {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.food-quote-author {
+    font-weight: bolder;
+    margin-top: 0.5em;
+    font-size: 0.6em;
+}
+
+@keyframes slideIn {
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .food-qoute-container {
+        transform: none;
+        animation: none;
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width:992px) and (min-width:576px) {
+    .food-qoute-container {
+        height: 100%;
+        width: 80%;
+        transform: none;
+        animation: none;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width:992px) {
+    .food-qoute-container {
+        height: 100%;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1366px) and (min-width:1200px) {
+    .food-qoute-container {
+        height: 20%;
+        width: 100%;
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,27 @@
+﻿[
+  {
+    "name": "Moj Market",
+    "coordinates": "44.77025627149073, 17.18976124571519",
+    "address": "Prnjavorska 98, Knezevo"
+  },
+  {
+    "name": "Moj Market",
+    "coordinates": "44.778786447935246, 17.19310864244612",
+    "address": "Svetozara Markovica 14, Banja Luka, Bosna i Hercegovina"
+  },
+  {
+    "name": "Tropic",
+    "address": "Ivana Gorana Kovačića bb, Banja Luka",
+    "coordinates": "44.789609678338216, 17.203452553743656"
+  },
+  {
+    "name": "Bingo",
+    "address": "Branka Popovića 41, Banja Luka",
+    "coordinates": "44.8092396239469, 17.209771826758246"
+  },
+  {
+    "name": "Robot",
+    "address": "Branislava Nušića 35, Prijedor 79101",
+    "coordinates": "44.98247480848801, 16.71041961512018"
+  }
+]

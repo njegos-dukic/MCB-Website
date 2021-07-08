@@ -1,0 +1,54 @@
+:root {
+    --admin-home-font-color: white;
+    --admin-home-main-color: #0c0c0c;
+    --admin-home-secondary-color: #1c1c1c;
+}
+
+.admin-cards {
+    background-color: var(--admin-home-main-color);
+    color: var(--admin-home-font-color);
+    min-height: 90vh;
+    padding: 5% 10%;
+}
+
+.admin-card {
+    background-color: var(--admin-home-secondary-color);
+    height: 200px;
+    min-width: 15%;
+    margin: 20px;
+    border-radius: 5%;
+}
+
+.admin-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    flex-wrap: wrap;
+    white-space: pre-wrap;
+}
+
+.admin-card-icon {
+    font-size: 3em;
+}
+
+.admin-card-url {
+    color: var(--admin-home-font-color);
+}
+
+.admin-card-url:hover {
+    color: var(--admin-home-main-color);
+}
+
+@media screen and (max-width:1200px) {
+    .admin-card {
+        min-width: 40%;
+    }
+}
+
+@media screen and (max-width:1400px) and (min-width:1200px) {
+    .admin-card {
+        min-width: 30%;
+    }
+}

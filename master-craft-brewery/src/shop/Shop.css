@@ -1,0 +1,14 @@
+.base-container
+{
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    background-color: #1c1c1c;
+}
+
+.items
+{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}

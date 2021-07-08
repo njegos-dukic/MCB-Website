@@ -1,0 +1,80 @@
+:root {
+  --food-menu-primary: #1c1c1c;
+  --food-menu-secondary: #132038;
+  --food-menu-ternary: #171425;
+  --food-menu-ternary-font: #ffffff;
+  --food-menu-secondary-font: #ffffff;
+  --food-menu-card-background: #00001341;
+  --food-menu-primary-font: #132038;
+  --food-menu-margin: 3em;
+}
+
+.food-menu-container {
+  background-color: var(--food-menu-primary);
+}
+
+.food-menu-additional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.menu {
+  z-index: 3;
+  background-color: var(--food-menu-secondary);
+  margin: var(--food-menu-margin);
+  margin-top: -10vh;
+  flex: auto;
+  min-width: 0;
+}
+
+.menu-header {
+  text-align: center;
+  font-size: 1.2em;
+  padding-top: 3em;
+  color: var(--food-menu-ternary-font);
+  margin-bottom: 5em;
+}
+
+.menu-header>h1 {
+  font-size: 2em;
+}
+
+.menu-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  flex-basis: 30%;
+  flex: 30%;
+}
+
+.menu-body>h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+@media screen and (max-width:576px) {
+  .menu {
+    min-height: 80vh;
+  }
+  .menu-header {
+    font-size: 0.8em;
+    margin-bottom: 2em;
+    padding-top: 1em;
+  }
+  .menu-body {
+    font-size: 1em;
+    margin-top: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+  .menu-header {
+    margin-bottom: 3em;
+  }
+  .menu-body {
+    padding: 2em;
+  }
+}

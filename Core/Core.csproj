@@ -1,0 +1,159 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210105220359_AddDatabaseTables.cs" />
+    <Compile Remove="Migrations\20210105220359_AddDatabaseTables.Designer.cs" />
+    <Compile Remove="Migrations\20210407131627_AddMenuDescription.cs" />
+    <Compile Remove="Migrations\20210407131627_AddMenuDescription.Designer.cs" />
+    <Compile Remove="Migrations\20210407132925_AddCoctailAndUpdateBeerTable.cs" />
+    <Compile Remove="Migrations\20210407132925_AddCoctailAndUpdateBeerTable.Designer.cs" />
+    <Compile Remove="Migrations\20210407160948_ApplyConfigurationCoctails.cs" />
+    <Compile Remove="Migrations\20210407160948_ApplyConfigurationCoctails.Designer.cs" />
+    <Compile Remove="Migrations\20210408153835_ChangeRelationshipCoctailProduct.cs" />
+    <Compile Remove="Migrations\20210408153835_ChangeRelationshipCoctailProduct.Designer.cs" />
+    <Compile Remove="Migrations\20210408160715_CreateCoctailTable.cs" />
+    <Compile Remove="Migrations\20210408160715_CreateCoctailTable.Designer.cs" />
+    <Compile Remove="Migrations\20210414165841_SeparateTableForPhone.cs" />
+    <Compile Remove="Migrations\20210414165841_SeparateTableForPhone.Designer.cs" />
+    <Compile Remove="Migrations\20210415134223_ChangeProductModel.cs" />
+    <Compile Remove="Migrations\20210415134223_ChangeProductModel.Designer.cs" />
+    <Compile Remove="Migrations\20210415134515_AddIngredientsToProduct.cs" />
+    <Compile Remove="Migrations\20210415134515_AddIngredientsToProduct.Designer.cs" />
+    <Compile Remove="Migrations\20210415143806_RemovePriceFromProduct.cs" />
+    <Compile Remove="Migrations\20210415143806_RemovePriceFromProduct.Designer.cs" />
+    <Compile Remove="Migrations\20210418154237_MakePhotoUriOptional.cs" />
+    <Compile Remove="Migrations\20210418154237_MakePhotoUriOptional.Designer.cs" />
+    <Compile Remove="Migrations\20210418211106_RemoveOldMenuModel.cs" />
+    <Compile Remove="Migrations\20210418211106_RemoveOldMenuModel.Designer.cs" />
+    <Compile Remove="Migrations\20210418211930_AddmenumenuItem.cs" />
+    <Compile Remove="Migrations\20210418211930_AddmenumenuItem.Designer.cs" />
+    <Compile Remove="Migrations\20210418212106_AddmenuItem.cs" />
+    <Compile Remove="Migrations\20210418212106_AddmenuItem.Designer.cs" />
+    <Compile Remove="Migrations\20210420122046_DefaultProductImage.cs" />
+    <Compile Remove="Migrations\20210420122046_DefaultProductImage.Designer.cs" />
+    <Compile Remove="Migrations\20210524140851_AddApiKey.cs" />
+    <Compile Remove="Migrations\20210524140851_AddApiKey.Designer.cs" />
+    <Compile Remove="Migrations\20210524171547_AddAdministrator.cs" />
+    <Compile Remove="Migrations\20210524171547_AddAdministrator.Designer.cs" />
+    <Compile Remove="Migrations\20210524171732_AddAdministrator.cs" />
+    <Compile Remove="Migrations\20210524171732_AddAdministrator.Designer.cs" />
+    <Compile Remove="Migrations\20210524190320_AddCompanyId.cs" />
+    <Compile Remove="Migrations\20210524190320_AddCompanyId.Designer.cs" />
+    <Compile Remove="Migrations\20210524190658_AddForeignKeyCompany.cs" />
+    <Compile Remove="Migrations\20210524190658_AddForeignKeyCompany.Designer.cs" />
+    <Compile Remove="Migrations\20210524191032_AddForeignKeyCompany.cs" />
+    <Compile Remove="Migrations\20210524191032_AddForeignKeyCompany.Designer.cs" />
+    <Compile Remove="Migrations\20210525160515_ConnectCompanyAdministrator.cs" />
+    <Compile Remove="Migrations\20210525160515_ConnectCompanyAdministrator.Designer.cs" />
+    <Compile Remove="Migrations\20210526131931_AddCompanyProductRelationship.cs" />
+    <Compile Remove="Migrations\20210526131931_AddCompanyProductRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20210526133632_AddCompanyProduct.cs" />
+    <Compile Remove="Migrations\20210526133632_AddCompanyProduct.Designer.cs" />
+    <Compile Remove="Migrations\20210529115518_Ingredients.cs" />
+    <Compile Remove="Migrations\20210529115518_Ingredients.Designer.cs" />
+    <Compile Remove="Migrations\20210529120746_Check.cs" />
+    <Compile Remove="Migrations\20210529120746_Check.Designer.cs" />
+    <Compile Remove="Migrations\20210529121610_UpdateModel.cs" />
+    <Compile Remove="Migrations\20210529121610_UpdateModel.Designer.cs" />
+    <Compile Remove="Migrations\20210529150051_UpdateModel.cs" />
+    <Compile Remove="Migrations\20210529150051_UpdateModel.Designer.cs" />
+    <Compile Remove="Migrations\20210529155010_UpdateModel.cs" />
+    <Compile Remove="Migrations\20210529155010_UpdateModel.Designer.cs" />
+    <Compile Remove="Migrations\20210604112020_GalleryAndQuotes.cs" />
+    <Compile Remove="Migrations\20210604112020_GalleryAndQuotes.Designer.cs" />
+    <Compile Remove="Migrations\20210604164109_GalleryAndQuotesFix.cs" />
+    <Compile Remove="Migrations\20210604164109_GalleryAndQuotesFix.Designer.cs" />
+    <Compile Remove="Migrations\20210605134855_AddEvents.cs" />
+    <Compile Remove="Migrations\20210605134855_AddEvents.Designer.cs" />
+    <Compile Remove="Migrations\20210605170417_QuotesFix.cs" />
+    <Compile Remove="Migrations\20210605170417_QuotesFix.Designer.cs" />
+    <Compile Remove="Migrations\20210605175228_AddEvents.cs" />
+    <Compile Remove="Migrations\20210605175228_AddEvents.Designer.cs" />
+    <Compile Remove="Migrations\20210605175802_AddEvents.cs" />
+    <Compile Remove="Migrations\20210605175802_AddEvents.Designer.cs" />
+    <Compile Remove="Migrations\20210605180607_ChangeConstraint.cs" />
+    <Compile Remove="Migrations\20210605180607_ChangeConstraint.Designer.cs" />
+    <Compile Remove="Migrations\20210605180752_CreateEventTable.cs" />
+    <Compile Remove="Migrations\20210605180752_CreateEventTable.Designer.cs" />
+    <Compile Remove="Migrations\20210611174637_DropMediaFile.cs" />
+    <Compile Remove="Migrations\20210611174637_DropMediaFile.Designer.cs" />
+    <Compile Remove="Migrations\20210611195419_AddMediafile.cs" />
+    <Compile Remove="Migrations\20210611195419_AddMediafile.Designer.cs" />
+    <Compile Remove="Migrations\20210612074335_ChangeFoodMenuModel.cs" />
+    <Compile Remove="Migrations\20210612074335_ChangeFoodMenuModel.Designer.cs" />
+    <Compile Remove="Migrations\20210612094739_DropColumnDeleted.cs" />
+    <Compile Remove="Migrations\20210612094739_DropColumnDeleted.Designer.cs" />
+    <Compile Remove="Migrations\20210612104616_CreateDatabaseModel.cs" />
+    <Compile Remove="Migrations\20210612104616_CreateDatabaseModel.Designer.cs" />
+    <Compile Remove="Migrations\20210612171926_CreateDatabaseModel.cs" />
+    <Compile Remove="Migrations\20210612171926_CreateDatabaseModel.Designer.cs" />
+    <Compile Remove="Migrations\20210617093629_MakeNameRequired.cs" />
+    <Compile Remove="Migrations\20210617093629_MakeNameRequired.Designer.cs" />
+    <Compile Remove="Migrations\20210619104811_CreateDatabaseModel.cs" />
+    <Compile Remove="Migrations\20210619104811_CreateDatabaseModel.Designer.cs" />
+    <Compile Remove="Migrations\20210619120106_CreateDatabaseModel.cs" />
+    <Compile Remove="Migrations\20210619120106_CreateDatabaseModel.Designer.cs" />
+    <Compile Remove="Migrations\20210619121628_CreateDatabaseModel.cs" />
+    <Compile Remove="Migrations\20210619121628_CreateDatabaseModel.Designer.cs" />
+    <Compile Remove="Migrations\20210619124604_CreateDatabaseModel.cs" />
+    <Compile Remove="Migrations\20210619124604_CreateDatabaseModel.Designer.cs" />
+    <Compile Remove="Migrations\20210619191339_FixGalleryAndMediafile.cs" />
+    <Compile Remove="Migrations\20210619191339_FixGalleryAndMediafile.Designer.cs" />
+    <Compile Remove="Migrations\20210627081540_CreateDatabaseModel.cs" />
+    <Compile Remove="Migrations\20210627081540_CreateDatabaseModel.Designer.cs" />
+    <Compile Remove="Migrations\20210627083654_CreateDatabaseModel.cs" />
+    <Compile Remove="Migrations\20210627083654_CreateDatabaseModel.Designer.cs" />
+    <Compile Remove="Migrations\20210627121914_CreateDatabaseModel.cs" />
+    <Compile Remove="Migrations\20210627121914_CreateDatabaseModel.Designer.cs" />
+    <Compile Remove="Migrations\20210701152002_MailConfiguration.cs" />
+    <Compile Remove="Migrations\20210701152002_MailConfiguration.Designer.cs" />
+    <Compile Remove="Migrations\20210701152712_MailConfiguration.cs" />
+    <Compile Remove="Migrations\20210701152712_MailConfiguration.Designer.cs" />
+    <Compile Remove="Migrations\20210701154924_CreateDatabaseModel.cs" />
+    <Compile Remove="Migrations\20210701154924_CreateDatabaseModel.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\contactEmailTemplate.html" />
+    <None Remove="Resources\defaultEventImage.png" />
+    <None Remove="Resources\defaultProductImage.png" />
+    <None Remove="Resources\emailTemplate.html" />
+    <None Remove="Resources\HTML\tableStyle.json" />
+    <None Remove="Resources\mailConfiguration.json" />
+    <None Remove="Resources\MCBLogo.png" />
+    <None Remove="Resources\orderEmailTemplate.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\defaultEventImage.png" />
+    <EmbeddedResource Include="Resources\defaultProductImage.png" />
+    <EmbeddedResource Include="Resources\HTML\contactEmailTemplate.html" />
+    <EmbeddedResource Include="Resources\HTML\emailTemplate.html" />
+    <EmbeddedResource Include="Resources\HTML\mailConfiguration.json" />
+    <EmbeddedResource Include="Resources\HTML\MCBLogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\HTML\orderEmailTemplate.html" />
+    <EmbeddedResource Include="Resources\HTML\tableStyle.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.2.4" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+  </ItemGroup>
+
+</Project>

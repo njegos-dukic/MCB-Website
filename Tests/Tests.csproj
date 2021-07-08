@@ -1,0 +1,95 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Common\Data\ExistingCompany.json" />
+    <None Remove="Common\Data\ExistingGallery.json" />
+    <None Remove="Common\Data\ExistingMenu.json" />
+    <None Remove="Common\Data\ExistingProduct.json" />
+    <None Remove="Common\Data\ExistingQuote.json" />
+    <None Remove="Common\Data\Images\MasterPlate.jpg" />
+    <None Remove="Common\Data\InvalidData\InvalidCompany.json" />
+    <None Remove="Common\Data\InvalidData\InvalidCompanyInfo.json" />
+    <None Remove="Common\Data\InvalidData\InvalidGallery.json" />
+    <None Remove="Common\Data\InvalidData\InvalidPhones.json" />
+    <None Remove="Common\Data\InvalidData\InvalidProduct.json" />
+    <None Remove="Common\Data\Lists\Events.json" />
+    <None Remove="Common\Data\InvalidData\InvalidQuote.json" />
+    <None Remove="Common\Data\Lists\Galleries.json" />
+    <None Remove="Common\Data\Lists\Menus.json" />
+    <None Remove="Common\Data\Lists\Quotes.json" />
+    <None Remove="Common\Data\NewCompany.json" />
+    <None Remove="Common\Data\NewEvent.json" />
+    <None Remove="Common\Data\NewGallery.json" />
+    <None Remove="Common\Data\NewMenu.json" />
+    <None Remove="Common\Data\NewProduct.json" />
+    <None Remove="Common\Data\NewQuote.json" />
+    <None Remove="Common\Data\Products.json" />
+    <None Remove="Common\Data\RootAdministrator.json" />
+    <None Remove="Common\Data\Servings.json" />
+    <None Remove="Common\Data\SocialMedias.json" />
+    <None Remove="Common\Data\ValidPhones.json" />
+    <None Remove="Common\Data\Wholesales.json" />
+    <None Remove="Common\Data\Lists\ProductTypes.json" />
+    <None Remove="Configuration\TestConfiguration.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Common\Data\Images\MasterPlate.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Common\Data\ExistingCompany.json" />
+    <EmbeddedResource Include="Common\Data\ExistingGallery.json" />
+    <EmbeddedResource Include="Common\Data\ExistingMenu.json" />
+    <EmbeddedResource Include="Common\Data\ExistingProduct.json" />
+    <EmbeddedResource Include="Common\Data\ExistingQuote.json" />
+    <EmbeddedResource Include="Common\Data\InvalidData\InvalidCompany.json" />
+    <EmbeddedResource Include="Common\Data\InvalidData\InvalidGallery.json" />
+    <EmbeddedResource Include="Common\Data\InvalidData\InvalidProduct.json" />
+    <EmbeddedResource Include="Common\Data\InvalidData\InvalidQuote.json" />
+    <EmbeddedResource Include="Common\Data\Lists\Galleries.json" />
+    <EmbeddedResource Include="Common\Data\Lists\Quotes.json" />
+    <EmbeddedResource Include="Common\Data\Lists\Events.json" />
+    <EmbeddedResource Include="Common\Data\Lists\Menus.json" />
+    <EmbeddedResource Include="Common\Data\NewEvent.json" />
+    <EmbeddedResource Include="Common\Data\NewGallery.json" />
+    <EmbeddedResource Include="Common\Data\NewMenu.json" />
+    <EmbeddedResource Include="Common\Data\NewProduct.json" />
+    <EmbeddedResource Include="Common\Data\Lists\Products.json" />
+    <EmbeddedResource Include="Common\Data\InvalidData\InvalidPhones.json" />
+    <EmbeddedResource Include="Common\Data\NewCompany.json" />
+    <EmbeddedResource Include="Common\Data\Lists\ProductTypes.json" />
+    <EmbeddedResource Include="Common\Data\Lists\Servings.json" />
+    <EmbeddedResource Include="Common\Data\Lists\SocialMedias.json" />
+    <EmbeddedResource Include="Common\Data\Lists\ValidPhones.json" />
+    <EmbeddedResource Include="Common\Data\Lists\Wholesales.json" />
+    <EmbeddedResource Include="Common\Data\NewQuote.json" />
+    <EmbeddedResource Include="Common\Data\RootAdministrator.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\TestConfiguration.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.10" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.0.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.0.0" />
+    <PackageReference Include="coverlet.collector" Version="1.0.1" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+    <PackageReference Include="System.Linq.Async" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+  </ItemGroup>
+
+</Project>

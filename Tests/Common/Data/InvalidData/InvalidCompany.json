@@ -1,0 +1,31 @@
+{
+  /* This object is representation of invalid company information, with invalid email
+  and invalid coordinates.*/
+  "name": "MCB Invaild",
+  "address": "Bulevar Vojvode Stepe Stepanovica 44, Banja Luka, Bosna i Hercegovina",
+  "coordinates": "44.763301204398566 17.197738042099605",
+  "phone": "+38765916917",
+  "email": "info-mastercraftbrewery.com",
+  "postalCode": "78000",
+  "socialmedias": [
+    {
+      "name": "Facebook",
+      "type": 0,
+      "url": "https://www.facebook.com/themastercraftbrewery"
+    },
+    {
+      "name": "Instagram",
+      "type": 3,
+      "url": "https://www.instagram.com/the_master_craft_brewery/"
+
+    }
+  ],
+  "wholesales": [
+
+  ],
+  "phones": [
+    {
+      "phoneNumber": "+38766623110"
+    }
+  ]
+}

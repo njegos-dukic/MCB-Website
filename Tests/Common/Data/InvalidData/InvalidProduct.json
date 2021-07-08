@@ -1,0 +1,23 @@
+{
+  "name": null,
+  "price": 12.0,
+  "photoUri": "/asfasf/UniorPaleAle.jpg",
+  "description": "Novo u ponudi! Pale ale sa ukusom lipe.",
+  "ingredients": [ "Aroma lipe", "jecam", "pivski kvasac" ],
+  "isInStock": true,
+  "canBePurchasedOnline": true,
+  "productServings": [
+    {
+      "productServingId": 0,
+      "productId": 0,
+      "servingId": 0,
+      "price": 10.0
+    },
+    {
+      "productServingId": 0,
+      "productId": 0,
+      "servingId": 0,
+      "price": 12.0
+    }
+  ]
+}

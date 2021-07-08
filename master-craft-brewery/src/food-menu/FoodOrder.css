@@ -1,0 +1,125 @@
+.food-menu-order {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    min-height: 25%;
+    color: var(--food-menu-ternary-font);
+    font-size: 1.5em;
+    margin: var(--food-menu-margin);
+    z-index: 10;
+    transform: translateY(-2000px);
+    animation: 1.4s slideIn ease-out forwards 0.4s;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.75) 50%,rgba(0,0,0,0.75) 100% ), url('../assets/cook.jpg');
+    background-size: cover;
+    background-position-y: center;
+    max-height: 500px;
+}
+
+.food-menu-order>a {
+    background-color: white;
+    color: var(--food-menu-primary-font);
+    font-size: 1.3em;
+    width: 60%;
+    margin-top: 1em;
+    text-decoration: none;
+}
+
+.food-menu-order>a:hover {
+    background-color: white;
+    color: var(--food-menu-primary-font);
+    font-size: 1.4em;
+    width: 66%;
+}
+
+.order-icon {
+    margin-right: 0.5em;
+    font-size: 1em;
+}
+
+@media screen and (max-width:576px) {
+    .food-menu-order {
+        padding: 10px;
+        font-size: 0.9em;
+        animation: none;
+        transform: none;
+        background-position-y: center;
+        background-attachment: local;
+        width: 60%;
+        height: 100%;
+    }
+    .food-menu-order>a {
+        width: 60%;
+        font-size: 0.6em;
+    }
+    .food-menu-order>a:hover {
+        font-size: 0.6em;
+        width: 66%;
+    }
+}
+
+@media screen and (max-width:992px) and (min-width:576px) {
+    .food-menu-order {
+        padding: 5%;
+        width: 60%;
+        height: 100%;
+        font-size: 1.2em;
+        z-index: 10;
+        background-position-y: center;
+        background-attachment: local;
+        background-size: cover;
+        transform: none;
+        animation: none;
+    }
+    .food-menu-order>a {
+        width: 40%;
+        font-size: 0.9em;
+    }
+    .food-menu-order>a:hover {
+        font-size: 0.9em;
+        width: 44%;
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width:992px) {
+    .food-menu-order {
+        padding: 5%;
+        width: 60%;
+        height: 100%;
+        font-size: 1.5em;
+        z-index: 10;
+        background-position-y: center;
+        background-attachment: local;
+        background-size: cover;
+        transform: none;
+        animation: none;
+    }
+    .food-menu-order>a {
+        width: 30%;
+        font-size: 1em;
+    }
+    .food-menu-order>a:hover {
+        width: 33%;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:1366px) and (min-width:1200px) {
+    .food-menu-order {
+        padding: 5%;
+        font-size: 1.5em;
+        z-index: 10;
+        background-position-y: center;
+        background-attachment: local;
+        background-size: cover;
+    }
+    .food-menu-order>a {
+        font-size: 0.9em;
+    }
+    .food-menu-order>a:hover {
+        font-size: 0.9em;
+    }
+}
